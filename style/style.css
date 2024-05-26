@@ -3,10 +3,8 @@ html {
   width: 600px;
   margin: 0 auto;
   scroll-behavior: smooth;
-  /* setting the base font to 16px so that "em", "rem" and "vw" can be used accordingly.*/
 }
 
-/* Legend */
 :root {
   --primary-color: #d7d7db;
   --secondary-color: #ededf0;
@@ -17,30 +15,17 @@ html {
 
 }
 
-/* Legend End */
 
-
-/* Fonts */
 @font-face {
   font-family: 'desdemonaregular';
-  src: url('fonts/desdemon_1-webfont.woff2') format('woff2'),
-    url('fonts/desdemon_1-webfont.woff') format('woff'), url('fonts/desdemon.ttf') format('truetype');
+  src: url('../fonts/desdemon_1-webfont.woff2') format('woff2'),
+    url('../fonts/desdemon_1-webfont.woff') format('woff'), url('../fonts/desdemon.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
-
-
-/* 
-font-family: 'Open Sans', sans-serif;
-font-family: 'Montserrat', sans-serif;
- */
-
-/* Fonts End */
-
-/*  Navigation Menu */
 
 .navbar-custom {
   background-color: rgb(35, 35, 38, .95);
@@ -54,18 +39,15 @@ font-family: 'Montserrat', sans-serif;
   width: 50px;
 }
 
-/* brand & text color */
 .navbar-custom .navbar-brand,
 .navbar-custom .navbar-text {
   color: var(--secondary-color);
 }
 
-/* link color */
 .navbar-custom .navbar-nav .nav-link {
   color: var(--primary-color);
 }
 
-/* active or hovered links */
 .navbar-custom .nav-item.active .nav-link,
 .navbar-custom .nav-item:hover .nav-link {
   color: var(--link-glow);
@@ -109,10 +91,9 @@ h3 {
 
 /* Visual Foundation */
 #body {
-  background: url(https://ucarecdn.com/9232aead-dd1e-4674-894d-687f92e2eedb/-/preview/-/quality/smart/);
+  background: url(../img/Fond_Guts_Griffith.png);
   background-size: cover;
   background-attachment: fixed;
-  /*https://twitter.com/GoodWillsmith/status/1395228526194872320/photo/1 */
 }
 
 #main {
@@ -324,7 +305,7 @@ p {
 }
 
 .symbol {
-  background: url('https://www.dropbox.com/s/rr2caz1ezv45o85/Berserk_Symbol_of_Sacrifice.png?raw=1') no-repeat left top;
+  background: url('../img/Kentaro/Symbol.png') no-repeat left top;
 
 }
 
@@ -336,7 +317,7 @@ p {
   padding-right: 40px;
   padding-left: 40px;
   list-style: none;
-  background-image: url("https://www.dropbox.com/s/rr2caz1ezv45o85/Berserk_Symbol_of_Sacrifice.png?raw=1");
+  background-image: url("../img/Kentaro/Symbol.png");
   background-repeat: no-repeat;
   background-position: left center;
   background-size: 25px;
