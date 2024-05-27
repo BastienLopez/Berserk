@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <script>
+        function loadFile(filename, elementId) {
+            fetch(filename)
+                .then(response => response.text())
+                .then(text => document.getElementById(elementId).innerHTML = text);
+        }
+
+        document.addEventListener("DOMContentLoaded", function() {
+            loadFile('head.html', 'head-content');
+            loadFile('header.html', 'header-content');
+        });
+    </script>
+</head>
+
+<body id="body">
+    <div id="head-content"></div>
+    <header id="header-content"></header>
+    
+    <main id="main">
+        <div class="container">
+            <div>
+                <h1 id="title">Guts et son equipe</h1>
+                <div>
+                    <figure>
+                        <img id="proto" src="../img/Epopee/Equipe.png" class="center hover" data-toggle="modal" data-target="#berserker-img">
+                        <!-- Modal -->
+                        <div class="modal fade" id="berserker-img" tabindex="-1" role="dialog"
+                            aria-labelledby="berserker-img" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal"
+                                            aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="../img/Epopee/Equipe.png"
+                                        class="modal-image img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Modal -->
+                        </figure>
+                </div>
+            </div>
+            <br>
+
+            <div id="manga-list">
+                <ul>
+                    <!-- Roi -->
+                    <li class="mangatitle">
+                        <h2 style="text-align: center;">Guts & Casca</h2>
+                    </li>
+                    
+                    <div>
+                        <figure>
+                            <img id="proto" src="../img/Epopee/Guts_Casca.png" class="center hover" data-toggle="modal" data-target="#berserker-img">
+                            <!-- Modal -->
+                            <div class="modal fade" id="berserker-img" tabindex="-1" role="dialog"
+                                aria-labelledby="berserker-img" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal"
+                                                aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>                                        </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="../img/Epopee/Guts_Casca.png"
+                                            class="modal-image img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Modal -->
+                        </figure>
+                    </div>
+                    <br>
+
+                    <!-- Puck  -->
+                    <li class="mangatitle">
+                        <h2 style="text-align: center;">Puck</h2>
+                    </li>
+                    
+                    <div>
+                        <figure>
+                            <img id="proto" src="../img/Epopee/Puck.png" class="center hover" data-toggle="modal" data-target="#berserker-img">
+                            <!-- Modal -->
+                            <div class="modal fade" id="berserker-img" tabindex="-1" role="dialog"
+                                aria-labelledby="berserker-img" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>                                        
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="../img/Epopee/Puck.png"
+                                            class="modal-image img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Modal -->
+                        </figure>
+                    </div>
+                    <p class="description"> <strong> Description  :</strong>Puck est un elfe espiègle et loyal qui accompagne Guts depuis le début de ses aventures. 
+                        Il fournit souvent des soins médicaux grâce à sa poudre de fée et apporte une touche d'humour à l'histoire.
+                   </p>
+                    <br>
+                    <p class="description"> <strong> Affinités et Pouvoirs :</strong> Puck peut soigner les blessures mineures et utilise ses ailes pour voler. 
+                        Sa petite taille et sa rapidité en font un excellent éclaireur.
+                    </p>
+                    <p style="text-align: center;">
+                        <a href="Puck.html">
+                            <strong>👉🏽😉👈🏽</strong> 
+                        </a>
+                    </p>
+                   <br>
+
+                    <!-- Isidro  -->
+                    <li class="mangatitle">
+                        <h2 style="text-align: center;">Isidro</h2>
+                    </li>
+                    
+                    <div>
+                        <figure>
+                            <img id="proto" src="../img/Epopee/Isidro.png" class="center hover" data-toggle="modal" data-target="#berserker-img">
+                            <!-- Modal -->
+                            <div class="modal fade" id="berserker-img" tabindex="-1" role="dialog"
+                                aria-labelledby="berserker-img" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal"
+                                                aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>                                        </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="../img/Epopee/Isidro.png"
+                                            class="modal-image img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Modal -->
+                        </figure>
+                    </div>
+                    <p class="description"> <strong> Description  :</strong>Isidro est un jeune voleur ambitieux qui rêve de devenir un grand guerrier.
+                         Il rejoint Guts dans l'espoir d'apprendre de lui et de prouver sa valeur.
+                    </p>
+                    <br>
+                    <p class="description"> <strong> Affinités et Pouvoirs :</strong> Isidro est agile et habile avec les couteaux et les frondes. 
+                        Bien qu'il manque d'expérience, sa détermination et sa bravoure le rendent précieux pour le groupe.
+                    </p>
+                    <br>
+
+                    <!-- Dame Farnese de Vandimion -->
+                    <li class="mangatitle">
+                        <h2 style="text-align: center;">Dame Farnese de Vandimion</h2>
+                    </li>
+                    
+                    <div>
+                        <figure>
+                            <img id="proto" src="../img/Epopee/Farnese.png" class="center hover" data-toggle="modal" data-target="#berserker-img">
+                            <!-- Modal -->
+                            <div class="modal fade" id="berserker-img" tabindex="-1" role="dialog"
+                                aria-labelledby="berserker-img" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal"
+                                                aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>                                        </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="../img/Epopee/Farnese.png"
+                                            class="modal-image img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Modal -->
+                        </figure>
+                    </div>
+                    <p class="description"> <strong> Description  :</strong>Farnese est l'ancienne commandante de la Troupe des Chaînes d'Acier. 
+                        Après avoir rencontré Guts, elle commence à questionner sa foi et décide de le suivre pour trouver un nouveau but.
+                   </p>
+                    <br>
+                    <p class="description"> <strong> Affinités et Pouvoirs :</strong> Farnese apprend la magie et devient une sorcière en formation sous la tutelle de Schierke. 
+                        Sa transition d'inquisitrice à sorcière reflète sa lutte intérieure et sa quête de rédemption.
+                    </p>
+                    <br>
+
+                    <!-- Serpico -->
+                    <li class="mangatitle">
+                        <h2 style="text-align: center;">Serpico</h2>
+                    </li>
+                    
+                    <div>
+                        <figure>
+                            <img id="proto" src="../img/Epopee/Serpico.png" class="center hover" data-toggle="modal" data-target="#berserker-img">
+                            <!-- Modal -->
+                            <div class="modal fade" id="berserker-img" tabindex="-1" role="dialog"
+                                aria-labelledby="berserker-img" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal"
+                                                aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>                                        </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="../img/Epopee/Serpico.png"
+                                            class="modal-image img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Modal -->
+                        </figure>
+                    </div>
+                    <p class="description"> <strong> Description  :</strong>Serpico est le demi-frère et protecteur dévoué de Farnese. 
+                        Il est intelligent, calme et extrêmement habile à l'épée, utilisant une rapière et un manteau enchanté pour combattre.
+                   </p>
+                    <br>
+                    <p class="description"> <strong> Affinités et Pouvoirs :</strong> Serpico utilise sa rapidité et son intelligence pour compenser sa force physique moindre. 
+                        Il manie aussi des armes magiques, y compris une épée enchantée et un manteau volant.
+                    </p>
+                    <br>
+
+                    <!-- Schierke  -->
+                    <li class="mangatitle">
+                        <h2 style="text-align: center;">Schierke</h2>
+                    </li>
+                    
+                    <div>
+                        <figure>
+                            <img id="proto" src="../img/Epopee/Schierke.png" class="center hover" data-toggle="modal" data-target="#berserker-img">
+                            <!-- Modal -->
+                            <div class="modal fade" id="berserker-img" tabindex="-1" role="dialog"
+                                aria-labelledby="berserker-img" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal"
+                                                aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>                                        </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="../img/Epopee/Schierke.png"
+                                            class="modal-image img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Modal -->
+                        </figure>
+                    </div>
+                    <p class="description"> <strong> Description  :</strong>Schierke est une jeune sorcière et apprentie de la puissante sorcière Flora. 
+                        Elle rejoint Guts et ses compagnons, apportant avec elle des connaissances en magie et une sagesse au-delà de son âge.
+                   </p>
+                    <br>
+                    <p class="description"> <strong> Affinités et Pouvoirs :</strong> Schierke est une mage talentueuse, capable de lancer de puissants sorts de protection et d'attaque. 
+                        Elle invoque des esprits élémentaires pour aider dans les combats et fournit une expertise magique essentielle au groupe.
+                    </p>
+                    <br>
+
+                    <!-- Ivalera   -->
+                    <li class="mangatitle">
+                        <h2 style="text-align: center;">Ivalera</h2>
+                    </li>
+                    
+                    <div>
+                        <figure>
+                            <img id="proto" src="../img/Epopee/Ivalera.png" class="center hover" data-toggle="modal" data-target="#berserker-img">
+                            <!-- Modal -->
+                            <div class="modal fade" id="berserker-img" tabindex="-1" role="dialog"
+                                aria-labelledby="berserker-img" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal"
+                                                aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>                                        </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="../img/Epopee/Ivalera.png"
+                                            class="modal-image img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Modal -->
+                        </figure>
+                    </div>
+                    <p class="description"> <strong> Description  :</strong>Ivalera est une elfe et la compagne de Schierke. 
+                        Elle est plus sérieuse que Puck et souvent critique envers lui, mais elle est tout aussi dévouée à aider ses amis.
+                   </p>
+                    <br>
+                    <p class="description"> <strong> Affinités et Pouvoirs :</strong> Ivalera peut voler et se rendre invisible, aidant Schierke dans ses incantations et en agissant comme éclaireuse et messagère.
+                    </p>
+                    <br>
+
+                    <!-- Skull Knight   -->
+                    <li class="mangatitle">
+                        <h2 style="text-align: center;">Skull Knight</h2>
+                    </li>
+                    
+                    <div>
+                        <figure>
+                            <img id="proto" src="../img/Epopee/Skull_knight.png" class="center hover" data-toggle="modal" data-target="#berserker-img">
+                            <!-- Modal -->
+                            <div class="modal fade" id="berserker-img" tabindex="-1" role="dialog"
+                                aria-labelledby="berserker-img" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal"
+                                                aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>                                        </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="../img/Epopee/Skull_knight.png"
+                                            class="modal-image img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Modal -->
+                        </figure>
+                    </div>
+                    <p class="description"> <strong> Description  :</strong>Le Skull Knight est un mystérieux et puissant guerrier vêtu d'une armure de chevalier squelettique. 
+                        Il apparaît souvent pour aider Guts dans les moments critiques et semble avoir une profonde connaissance des God Hand et du monde astral.
+                   </p>
+                    <br>
+                    <p class="description"> <strong> Affinités et Pouvoirs :</strong> Le Skull Knight possède une force surhumaine et une grande maîtrise de l'épée. 
+                        Son arme principale est une épée capable de trancher à travers les dimensions, et il est souvent vu chevauchant un cheval spectral. Il a une affinité particulière pour combattre les entités démoniaques et semble avoir une vendetta personnelle contre les God Hand, en particulier Void. 
+                        Ses origines et ses motivations restent enveloppées de mystère, ajoutant une aura de mysticisme et de légende à son personnage.
+                    </p>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+<!-- Custom JavaScript -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+crossorigin="anonymous"></script>
+
+</html>

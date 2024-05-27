@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <script>
+        function loadFile(filename, elementId) {
+            fetch(filename)
+                .then(response => response.text())
+                .then(text => document.getElementById(elementId).innerHTML = text);
+        }
+
+        document.addEventListener("DOMContentLoaded", function() {
+            loadFile('head.html', 'head-content');
+            loadFile('header.html', 'header-content');
+        });
+    </script>
+</head>
+
+<body id="body">
+    <div id="head-content"></div>
+    <header id="header-content"></header>
+    
+    <main id="main">
+        <div class="container">
+            <div>
+                <h1 id="title">Bande de Mozgus</h1>
+                <div>
+                    <figure>
+                        <img id="proto" src="../img/Papaute/Papaute.png" class="center hover" data-toggle="modal" data-target="#berserker-img">
+                        <!-- Modal -->
+                        <div class="modal fade" id="berserker-img" tabindex="-1" role="dialog"
+                            aria-labelledby="berserker-img" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal"
+                                            aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="../img/Papaute/Papaute.png"
+                                        class="modal-image img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Modal -->
+                        </figure>
+                </div>
+                <h2 style="text-align: center;">Forme angelique</h2>
+                <div>
+                    <figure>
+                        <img id="proto" src="../img/Papaute/Angelique.png" class="center hover" data-toggle="modal" data-target="#berserker-img">
+                        <!-- Modal -->
+                        <div class="modal fade" id="berserker-img" tabindex="-1" role="dialog"
+                            aria-labelledby="berserker-img" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal"
+                                            aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="../img/Papaute/Angelique.png"
+                                        class="modal-image img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Modal -->
+                        </figure>
+                </div>
+            </div>
+            <br>
+
+            <div id="manga-list">
+                <ul>
+                    <!-- Mozgus  -->
+                    <li class="mangatitle">
+                        <h2 style="text-align: center;">Mozgus</h2>
+                    </li>
+                    
+                    <div>
+                        <figure>
+                            <img id="proto" src="../img/Papaute/Mozgus.png" class="center hover" data-toggle="modal" data-target="#berserker-img">
+                            <!-- Modal -->
+                            <div class="modal fade" id="berserker-img" tabindex="-1" role="dialog"
+                                aria-labelledby="berserker-img" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal"
+                                                aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>                                        </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="../img/Papaute/Mozgus.png"
+                                            class="modal-image img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Modal -->
+                        </figure>
+                    </div>
+                    <p class="description"> <strong> Description  :</strong>Mozgus est un inquisiteur fanatique de l'Église de la Sainte Chaîne de Fer, connu pour sa cruauté et son dévouement aveugle à la foi. 
+                        Il est imposant et sévère, toujours prêt à punir ceux qu'il considère comme hérétiques
+                   </p>
+                    <br>
+                    <p class="description"> <strong> Affinités et Pouvoirs :</strong> Mozgus utilise des méthodes brutales de torture et de punition, croyant fermement que la souffrance purifie l'âme. 
+                        Sa foi inébranlable lui donne une aura presque surnaturelle de terreur et de dévotion.
+                    <br>
+
+                    <!-- Jérôme  -->
+                    <li class="mangatitle">
+                        <h2 style="text-align: center;">Jérôme </h2>
+                    </li>
+                    
+                    <div>
+                        <figure>
+                            <img id="proto" src="../img/Papaute/Jerome.png" class="center hover" data-toggle="modal" data-target="#berserker-img">
+                            <!-- Modal -->
+                            <div class="modal fade" id="berserker-img" tabindex="-1" role="dialog"
+                                aria-labelledby="berserker-img" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>                                        
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="../img/Papaute/Jerome.png"
+                                            class="modal-image img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Modal -->
+                        </figure>
+                    </div>
+                    <p class="description"> <strong> Description  :</strong>Jérôme est un homme musclé avec un visage déformé par des brûlures. 
+                        Il est loyal à Mozgus et partage sa passion pour la torture des hérétiques.
+                   </p>
+                    <br>
+                    <p class="description"> <strong> Affinités et Pouvoirs :</strong>Jérôme utilise des barres de fer chauffées pour marquer et torturer ses victimes, 
+                        reflétant son sadisme et son dévouement à la cause de Mozgus.
+                    </p>
+                   <br>
+
+                    <!-- Vladimir  -->
+                    <li class="mangatitle">
+                        <h2 style="text-align: center;">Vladimir</h2>
+                    </li>
+                    
+                    <div>
+                        <figure>
+                            <img id="proto" src="../img/Papaute/Vladimir.png" class="center hover" data-toggle="modal" data-target="#berserker-img">
+                            <!-- Modal -->
+                            <div class="modal fade" id="berserker-img" tabindex="-1" role="dialog"
+                                aria-labelledby="berserker-img" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal"
+                                                aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>                                        </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="../img/Papaute/Vladimir.png"
+                                            class="modal-image img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Modal -->
+                        </figure>
+                    </div>
+                    <p class="description"> <strong> Description  :</strong> Vladimir est petit et trapu, avec une apparence de singe et des expressions grotesques.
+                        Il est agile et possède une force surprenante malgré sa petite taille.
+                   </p>
+                    <br>
+                    <p class="description"> <strong> Affinités et Pouvoirs :</strong>Vladimir utilise des chaînes et des crochets pour capturer et mutiler les hérétiques, se délectant de la douleur qu'il inflige.
+                        Sa méthode de torture favorite implique de suspendre ses victimes pour les laisser mourir lentement.
+                    </p>
+                    <br>
+
+                    <!-- Hermann  -->
+                    <li class="mangatitle">
+                        <h2 style="text-align: center;">Hermann</h2>
+                    </li>
+                    
+                    <div>
+                        <figure>
+                            <img id="proto" src="../img/Papaute/Hermann.png" class="center hover" data-toggle="modal" data-target="#berserker-img">
+                            <!-- Modal -->
+                            <div class="modal fade" id="berserker-img" tabindex="-1" role="dialog"
+                                aria-labelledby="berserker-img" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal"
+                                                aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>                                        </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="../img/Papaute/Hermann.png"
+                                            class="modal-image img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Modal -->
+                        </figure>
+                    </div>
+                    <p class="description"> <strong> Description  :</strong>Hermann est un homme grand et mince avec des membres disproportionnés, lui donnant une apparence presque squelettique.
+                        Son visage est marqué par des cicatrices profondes.
+                   </p>
+                    <br>
+                    <p class="description"> <strong> Affinités et Pouvoirs :</strong>Hermann utilise des pinces et des outils de dissection pour torturer ses victimes avec une précision chirurgicale.
+                         Il aime particulièrement mutiler les doigts et les yeux.
+                    </p>
+                    <br>
+
+                    <!-- Bishop Mozgus -->
+                    <li class="mangatitle">
+                        <h2 style="text-align: center;">Bishop</h2>
+                        <h2 style="text-align: center;">(Les jumeaux)</h2>
+                    </li>
+                    
+                    <div>
+                        <figure>
+                            <img id="proto" src="../img/Papaute/Bishop_Mozgus.png" class="center hover" data-toggle="modal" data-target="#berserker-img">
+                            <!-- Modal -->
+                            <div class="modal fade" id="berserker-img" tabindex="-1" role="dialog"
+                                aria-labelledby="berserker-img" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal"
+                                                aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>                                        </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="../img/Papaute/Bishop_Mozgus.png"
+                                            class="modal-image img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Modal -->
+                        </figure>
+                    </div>
+                    <p class="description"> <strong> Description  :</strong>Deux autres disciples de Mozgus (souvent appelé Bishop Mozgus dans certaines traductions) connu pour leurs ailes 
+                        semblables à celles d'un ange, bien que déformées et grotesques. Ils affichent une expression sereine mais terrifiante.
+                   </p>
+                    <br>
+                    <p class="description"> <strong> Affinités et Pouvoirs :</strong> Ils utilisent leurs ailes pour se déplacer rapidement et capturer des victimes, qu'ils sacrifient ensuite dans des rituels macabres.
+                        Leurs méthodes sont particulièrement brutales, mêlant vol et mutilation.
+                    </p>
+                    <br>
+
+                    <!-- Simeon   -->
+                    <li class="mangatitle">
+                        <h2 style="text-align: center;">Simeon</h2>
+                    </li>
+                    
+                    <div>
+                        <figure>
+                            <img id="proto" src="../img/Papaute/Simeon.png" class="center hover" data-toggle="modal" data-target="#berserker-img">
+                            <!-- Modal -->
+                            <div class="modal fade" id="berserker-img" tabindex="-1" role="dialog"
+                                aria-labelledby="berserker-img" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal"
+                                                aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>                                        </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="../img/Papaute/Simeon.png"
+                                            class="modal-image img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Modal -->
+                        </figure>
+                    </div>
+                    <p class="description"> <strong> Description  :</strong>Simeon est un disciple massif avec une force herculéenne. 
+                        Il a une apparence bestiale avec des dents proéminentes et une mâchoire puissante.
+                   </p>
+                    <br>
+                    <p class="description"> <strong> Affinités et Pouvoirs :</strong> Simeon utilise sa force brute pour écraser et briser ses victimes. 
+                        Il est souvent en première ligne pour capturer des hérétiques, utilisant des techniques de torture basées sur la compression et l'écrasement.
+                    </p>
+
+                </ul>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+<!-- Custom JavaScript -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+crossorigin="anonymous"></script>
+
+</html>

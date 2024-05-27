@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <style>
+        #map {
+            height: 100vh;
+        }
+    </style>
+    <script>
+        function loadFile(filename, elementId) {
+            fetch(filename)
+                .then(response => response.text())
+                .then(text => document.getElementById(elementId).innerHTML = text);
+        }
+
+        document.addEventListener("DOMContentLoaded", function() {
+            loadFile('head.html', 'head-content');
+            loadFile('header.html', 'header-content');
+        });
+    </script>
+</head>
+
+<body id="body">
+    <div id="head-content"></div>
+    <header id="header-content"></header>
+    
+    <main id="main">
+        <div class="container">
+            <div>
+                <h1 id="title">Map interactive</h1>
+            </div>
+            
+            <div id="map"></div>
+            
+        </div>
+    </main>
+</body>
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="../js/map.js"></script>
+</html>
