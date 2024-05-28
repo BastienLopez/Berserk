@@ -1,13 +1,7 @@
 <!doctype html>
-<html lang="fr">
+<html-map lang="fr">
 
 <head>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-    <style>
-        #map {
-            height: 100vh;
-        }
-    </style>
     <script>
         function loadFile(filename, elementId) {
             fetch(filename)
@@ -16,17 +10,17 @@
         }
 
         document.addEventListener("DOMContentLoaded", function() {
-            loadFile('head.html', 'head-content');
+            loadFile('head/head-map.html', 'head-content');
             loadFile('header.html', 'header-content');
         });
     </script>
 </head>
 
-<body id="body">
+<body id="body-map">
     <div id="head-content"></div>
     <header id="header-content"></header>
     
-    <main id="main">
+    <main id="main-map">
         <div class="container">
             <div>
                 <h1 id="title">Map interactive</h1>
@@ -39,4 +33,4 @@
 </body>
 <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 <script src="../js/map.js"></script>
-</html>
+</html-map>
