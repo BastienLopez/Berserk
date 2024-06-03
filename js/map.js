@@ -28,19 +28,22 @@ document.addEventListener("DOMContentLoaded", () => {
   // Centrer la carte et régler le zoom initial pour afficher la carte entière
   map.setView([imageHeight / 2, imageWidth / 2], minZoom);
 
+  // Assurez-vous que la carte ne dépasse pas les bornes spécifiées
+  map.setMaxBounds(bounds);
+
   // Tomes 1-5
   const Serpent = L.icon({
     iconUrl: "../img/MAP/icons/tomes_1-5/Serpent.png", // Chemin vers votre icône personnalisée
     iconSize: [60, 60], // Taille de l'icône
     iconAnchor: [15, 15], // Point d'ancrage de l'icône (centre de l'icône)
-    popupAnchor: [0, -15], // Point d'ancrage de la pop-up par rapport à l'icône
+    popupAnchor: [17, -20], // Point d'ancrage de la pop-up par rapport à l'icône
   });
 
   const Zodd = L.icon({
     iconUrl: "../img/MAP/icons/tomes_1-5/Zodd.png", // Chemin vers une autre icône personnalisée
     iconSize: [55, 55],
     iconAnchor: [15, 15],
-    popupAnchor: [0, -15],
+    popupAnchor: [15, -20], // positif = droite , negatif = haut
   });
 
   // Tomes 5-10
@@ -48,49 +51,49 @@ document.addEventListener("DOMContentLoaded", () => {
     iconUrl: "../img/MAP/icons/tomes_5-10/Doldrey.png", // Chemin vers une autre icône personnalisée
     iconSize: [100, 100],
     iconAnchor: [15, 15],
-    popupAnchor: [0, -15],
+    popupAnchor: [35, -5],
   });
 
   const GvG = L.icon({
     iconUrl: "../img/MAP/icons/tomes_5-10/GvG.png", // Chemin vers une autre icône personnalisée
-    iconSize: [60, 60],
+    iconSize: [80, 60],
     iconAnchor: [15, 15],
-    popupAnchor: [0, -15],
+    popupAnchor: [25, -20],
   });
 
   const Torture = L.icon({
     iconUrl: "../img/MAP/icons/tomes_5-10/Torture.png", // Chemin vers une autre icône personnalisée
     iconSize: [50, 50],
     iconAnchor: [15, 15],
-    popupAnchor: [0, -15],
+    popupAnchor: [10, -20],
   });
 
   const Save = L.icon({
     iconUrl: "../img/MAP/icons/tomes_5-10/Save.png", // Chemin vers une autre icône personnalisée
-    iconSize: [50, 50],
+    iconSize: [60, 60],
     iconAnchor: [15, 15],
-    popupAnchor: [0, -15],
+    popupAnchor: [13, -20],
   });
 
   const Wyald = L.icon({
     iconUrl: "../img/MAP/icons/tomes_5-10/Wyald.png", // Chemin vers une autre icône personnalisée
     iconSize: [80, 80],
     iconAnchor: [15, 15],
-    popupAnchor: [0, -15],
+    popupAnchor: [20, -15],
   });
 
   const Skull_Knight = L.icon({
     iconUrl: "../img/MAP/icons/tomes_10-15/Skull_Knight.png", // Chemin vers une autre icône personnalisée
-    iconSize: [70, 70],
+    iconSize: [75, 75],
     iconAnchor: [15, 15],
-    popupAnchor: [0, -15],
+    popupAnchor: [25, -15],
   });
 
   const Eclipse = L.icon({
     iconUrl: "../img/MAP/icons/tomes_10-15/Eclipse.png", // Chemin vers une autre icône personnalisée
-    iconSize: [70, 70],
+    iconSize: [80, 80],
     iconAnchor: [15, 15],
-    popupAnchor: [0, -15],
+    popupAnchor: [25, -20],
   });
 
   // Tomes 10-15
@@ -98,35 +101,35 @@ document.addEventListener("DOMContentLoaded", () => {
     iconUrl: "../img/MAP/icons/tomes_10-15/Puck.png", // Chemin vers une autre icône personnalisée
     iconSize: [60, 60],
     iconAnchor: [15, 15],
-    popupAnchor: [0, -15],
+    popupAnchor: [15, -20],
   });
 
   const Farnese = L.icon({
     iconUrl: "../img/MAP/icons/tomes_10-15/Farnese.png", // Chemin vers une autre icône personnalisée
     iconSize: [60, 60],
     iconAnchor: [15, 15],
-    popupAnchor: [0, -15],
+    popupAnchor: [15, -25],
   });
 
   const Rosine = L.icon({
     iconUrl: "../img/MAP/icons/tomes_10-15/Rosine.png", // Chemin vers une autre icône personnalisée
     iconSize: [60, 60],
     iconAnchor: [15, 15],
-    popupAnchor: [0, -15],
+    popupAnchor: [15, -20],
   });
 
   const Disciples = L.icon({
     iconUrl: "../img/MAP/icons/tomes_15-20/Disciples.png", // Chemin vers une autre icône personnalisée
     iconSize: [60, 60],
     iconAnchor: [15, 15],
-    popupAnchor: [0, -15],
+    popupAnchor: [15, -20],
   });
 
   const Mozgus = L.icon({
     iconUrl: "../img/MAP/icons/tomes_15-20/Mozgus.png", // Chemin vers une autre icône personnalisée
     iconSize: [60, 60],
     iconAnchor: [15, 15],
-    popupAnchor: [0, -15],
+    popupAnchor: [15, -10],
   });
 
   // Emplacement des pings

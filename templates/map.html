@@ -1,36 +1,38 @@
-<!doctype html>
-<html-map lang="fr">
-
-<head>
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
     <script>
-        function loadFile(filename, elementId) {
-            fetch(filename)
-                .then(response => response.text())
-                .then(text => document.getElementById(elementId).innerHTML = text);
-        }
+      function loadFile(filename, elementId) {
+        fetch(filename)
+          .then((response) => response.text())
+          .then(
+            (text) => (document.getElementById(elementId).innerHTML = text)
+          );
+      }
 
-        document.addEventListener("DOMContentLoaded", function() {
-            loadFile('head/head-map.html', 'head-content');
-            loadFile('header.html', 'header-content');
-        });
+      document.addEventListener("DOMContentLoaded", function () {
+        loadFile("head/head-map.html", "head-content");
+        loadFile("header.html", "header-content");
+      });
     </script>
-</head>
+  </head>
 
-<body id="body-map">
+  <body id="body-map">
     <div id="head-content"></div>
     <header id="header-content"></header>
-    
+
     <main id="main-map">
-        <div class="container">
-            <div>
-                <h1 id="title">Map interactive</h1>
-            </div>
-            
-            <div id="map"></div>
-            
+      <div class="container">
+        <div>
+          <h1 id="title">Map interactive</h1>
         </div>
+
+        <div id="map-container">
+          <div id="map"></div>
+        </div>
+      </div>
     </main>
-</body>
-<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-<script src="../js/map.js"></script>
-</html-map>
+  </body>
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="../js/map.js"></script>
+</html>
