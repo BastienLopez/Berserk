@@ -84,7 +84,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const Skull_Knight = L.icon({
     iconUrl: "../img/MAP/icons/tomes_10-15/Skull_Knight.png", // Chemin vers une autre icône personnalisée
-    iconSize: [75, 75],
+    iconSize: [75, 85],
     iconAnchor: [15, 15],
     popupAnchor: [25, -15],
   });
