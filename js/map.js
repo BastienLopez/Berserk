@@ -46,49 +46,49 @@ document.addEventListener("DOMContentLoaded", () => {
   // Tomes 5-10
   const Doldrey = L.icon({
     iconUrl: "../img/MAP/icons/tomes_5-10/Doldrey.png", // Chemin vers une autre icône personnalisée
-    iconSize: [30, 30],
+    iconSize: [100, 100],
     iconAnchor: [15, 15],
     popupAnchor: [0, -15],
   });
 
   const GvG = L.icon({
     iconUrl: "../img/MAP/icons/tomes_5-10/GvG.png", // Chemin vers une autre icône personnalisée
-    iconSize: [30, 30],
+    iconSize: [60, 60],
     iconAnchor: [15, 15],
     popupAnchor: [0, -15],
   });
 
   const Torture = L.icon({
     iconUrl: "../img/MAP/icons/tomes_5-10/Torture.png", // Chemin vers une autre icône personnalisée
-    iconSize: [30, 30],
+    iconSize: [50, 50],
     iconAnchor: [15, 15],
     popupAnchor: [0, -15],
   });
 
   const Save = L.icon({
     iconUrl: "../img/MAP/icons/tomes_5-10/Save.png", // Chemin vers une autre icône personnalisée
-    iconSize: [30, 30],
+    iconSize: [50, 50],
     iconAnchor: [15, 15],
     popupAnchor: [0, -15],
   });
 
   const Wyald = L.icon({
     iconUrl: "../img/MAP/icons/tomes_5-10/Wyald.png", // Chemin vers une autre icône personnalisée
-    iconSize: [30, 30],
+    iconSize: [80, 80],
     iconAnchor: [15, 15],
     popupAnchor: [0, -15],
   });
 
   const Skull_Knight = L.icon({
     iconUrl: "../img/MAP/icons/tomes_10-15/Skull_Knight.png", // Chemin vers une autre icône personnalisée
-    iconSize: [30, 30],
+    iconSize: [70, 70],
     iconAnchor: [15, 15],
     popupAnchor: [0, -15],
   });
 
   const Eclipse = L.icon({
     iconUrl: "../img/MAP/icons/tomes_10-15/Eclipse.png", // Chemin vers une autre icône personnalisée
-    iconSize: [30, 30],
+    iconSize: [70, 70],
     iconAnchor: [15, 15],
     popupAnchor: [0, -15],
   });
@@ -96,35 +96,35 @@ document.addEventListener("DOMContentLoaded", () => {
   // Tomes 10-15
   const Puck = L.icon({
     iconUrl: "../img/MAP/icons/tomes_10-15/Puck.png", // Chemin vers une autre icône personnalisée
-    iconSize: [30, 30],
+    iconSize: [60, 60],
     iconAnchor: [15, 15],
     popupAnchor: [0, -15],
   });
 
   const Farnese = L.icon({
     iconUrl: "../img/MAP/icons/tomes_10-15/Farnese.png", // Chemin vers une autre icône personnalisée
-    iconSize: [30, 30],
+    iconSize: [60, 60],
     iconAnchor: [15, 15],
     popupAnchor: [0, -15],
   });
 
   const Rosine = L.icon({
     iconUrl: "../img/MAP/icons/tomes_10-15/Rosine.png", // Chemin vers une autre icône personnalisée
-    iconSize: [30, 30],
+    iconSize: [60, 60],
     iconAnchor: [15, 15],
     popupAnchor: [0, -15],
   });
 
   const Disciples = L.icon({
     iconUrl: "../img/MAP/icons/tomes_15-20/Disciples.png", // Chemin vers une autre icône personnalisée
-    iconSize: [30, 30],
+    iconSize: [60, 60],
     iconAnchor: [15, 15],
     popupAnchor: [0, -15],
   });
 
   const Mozgus = L.icon({
     iconUrl: "../img/MAP/icons/tomes_15-20/Mozgus.png", // Chemin vers une autre icône personnalisée
-    iconSize: [30, 30],
+    iconSize: [60, 60],
     iconAnchor: [15, 15],
     popupAnchor: [0, -15],
   });
@@ -210,13 +210,13 @@ document.addEventListener("DOMContentLoaded", () => {
     },
 
     //Tomes 15-20
-    // Premiers affrontements avec les Disciples de Mozgus = Tour de la Conviction.
+    // Premiers affrontements avec les Disciples de Mozgus = Tour de la Conviction proche d'Albion
     {
       coords: [800, 600],
       info: '<div style="text-align: center;"><img class="popup-image" src="../img/MAP/icons/tomes_15-20/Disciples1.png" alt="Image"><br><p class="description"> <strong>Description : </strong>Guts commence à se confronter aux disciples de Mozgus, chacun possédant des capacités uniques et effrayantes.</p></div>',
       icon: Disciples,
     },
-    // Combat final contre Mozgus  = Tour de la Conviction.
+    // Combat final contre Mozgus  = Tour de la Conviction proche d'Albion
     {
       coords: [900, 600],
       info: '<div style="text-align: center;"><img class="popup-image" src="../img/MAP/icons/tomes_15-20/Mozgus1.png" alt="Image"><br><p class="description"> <strong>Description : </strong>Guts affronte Mozgus dans une bataille intense. Mozgus, utilisant ses pouvoirs de transformation démoniaque, devient une menace redoutable. Guts doit utiliser toute sa force et son habileté pour vaincre Mozgus et ses disciples.</p></div>',
