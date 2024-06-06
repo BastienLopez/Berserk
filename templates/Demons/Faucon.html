@@ -13,8 +13,8 @@
       }
 
       document.addEventListener("DOMContentLoaded", function () {
-        loadFile("../head/head.html", "head-content");
-        loadFile("../header.html", "header-content");
+        loadFile("/templates/head/head-content.html", "head-content");
+        loadFile("/templates/header.html", "header-content");
       });
     </script>
   </head>
@@ -32,7 +32,7 @@
             <figure>
               <img
                 id="proto"
-                src="../img/Demons/Faucon/1.png"
+                src="/img/Demons/Faucon/Faucon.png"
                 class="center hover"
                 data-toggle="modal"
                 data-target="#berserker-img"
@@ -60,7 +60,7 @@
                     </div>
                     <div class="modal-body">
                       <img
-                        src="../img/Demons/Faucon/Demons.png"
+                        src="/img/Demons/Faucon/Faucon.png"
                         class="modal-image img-fluid"
                       />
                     </div>
@@ -71,20 +71,29 @@
             </figure>
           </div>
         </div>
+        <p style="text-align: center">Differents chapitres :</p>
+        <p style="text-align: center">
+          <a href="#Guerre"> La Guerre du Mal Sacré</a>
+        </p>
+        <p style="text-align: center"><a href="#Falconia">Falconia</a></p>
+        <br />
+
+        <h2 id="Guerre" style="text-align: center">La Guerre du Mal Sacré</h2>
+        <h3 style="text-align: center">Tomes 22 à 27</h3>
         <br />
 
         <div id="manga-list">
           <ul>
-            <!-- Zodd l'Immortel  -->
+            <!-- L'arbre possédé -->
             <li class="mangatitle">
-              <h2 style="text-align: center">Zodd l'Immortel</h2>
+              <h2 style="text-align: center">L'arbre possédé</h2>
             </li>
 
             <div>
               <figure>
                 <img
                   id="proto"
-                  src="../img/Demons/Faucon/Zodd.png"
+                  src="/img/Demons/Faucon/Arbre.png"
                   class="center hover"
                   data-toggle="modal"
                   data-target="#berserker-img"
@@ -112,7 +121,82 @@
                       </div>
                       <div class="modal-body">
                         <img
-                          src="../img/Demons/Faucon/Zodd.png"
+                          src="/img/Demons/Faucon/Arbre.png"
+                          class="modal-image img-fluid"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Modal -->
+              </figure>
+            </div>
+
+            <p>
+              <strong> Description :</strong>
+              Guts, seul, est confronté à un arbre géant animé par des esprits
+              maléfiques, un ennemi puissant et surnaturel. Cet arbre se trouve
+              dans une forêt et attaque les voyageurs qui osent s'aventurer dans
+              son territoire.
+            </p>
+            <br />
+
+            <p>
+              <strong> Description du combat :</strong>
+              Le combat commence lorsque Guts, en traversant la forêt seul, est
+              attaqué par l'Arbre Possédé. L'arbre utilise ses branches massives
+              pour tenter d'écraser et de capturer Guts. Guts réagit avec sa
+              force brute et sa maîtrise, tranchant à travers les branches de
+              l'arbre. Cependant, les capacités de régénération rapide de
+              l'arbre rendent la tâche difficile. Guts doit utiliser toutes ses
+              compétences et son expérience de combat pour éviter les attaques
+              de l'arbre et trouver une ouverture pour infliger des dégâts
+              significatifs. Le tournant du combat survient lorsque Guts
+              parvient à identifier le cœur maléfique de l'arbre, la source de
+              son animation. En utilisant sa force surhumaine et sa
+              détermination, Guts réussit à porter un coup décisif, tranchant le
+              tronc de l'arbre et détruisant le cœur maléfique qui l'animait.
+            </p>
+            <br />
+
+            <!-- Rosine  -->
+            <li class="mangatitle">
+              <h2 style="text-align: center">Rosine</h2>
+            </li>
+
+            <div>
+              <figure>
+                <img
+                  id="proto"
+                  src="/img/Demons/Faucon/Rosine.png"
+                  class="center hover"
+                  data-toggle="modal"
+                  data-target="#berserker-img"
+                />
+                <!-- Modal -->
+                <div
+                  class="modal fade"
+                  id="berserker-img"
+                  tabindex="-1"
+                  role="dialog"
+                  aria-labelledby="berserker-img"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button
+                          type="button"
+                          class="close"
+                          data-dismiss="modal"
+                          aria-label="Close"
+                        >
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <img
+                          src="/img/Demons/Faucon/Acier.png"
                           class="modal-image img-fluid"
                         />
                       </div>
@@ -123,17 +207,266 @@
               </figure>
             </div>
             <p>
-              <strong> Description :</strong>Zodd est un apôtre puissant et l'un
-              des premiers que Guts rencontre. Il est immensément fort et
-              immortel, prenant la forme d'un gigantesque démon cornu.
+              <strong> Description :</strong> Rosine est une apôtre qui prend la
+              forme d'une fée insectoïde. Elle était autrefois une jeune fille
+              humaine avant de se transformer en un apôtre.
             </p>
             <br />
             <p>
-              <strong> Affinités et Pouvoirs :</strong>Zodd possède une force
-              surhumaine, une grande endurance et la capacité de se transformer
-              en une créature démoniaque avec des ailes et des cornes.
+              <strong> Affinités et Pouvoirs :</strong> Rosine peut voler à
+              grande vitesse et utiliser des illusions pour désorienter ses
+              adversaires. Elle commande également une armée de créatures
+              insectoïdes.
             </p>
             <br />
+
+            <h2 id="Falconia" style="text-align: center">Falconia</h2>
+            <h3 style="text-align: center">Tomes 27 à 35</h3>
+
+            <!-- Guts contre la troupe de la chaîne de fer sacré  -->
+            <li class="mangatitle">
+              <h2 style="text-align: center">
+                Guts contre la troupe de la chaîne de fer sacré
+              </h2>
+            </li>
+
+            <div>
+              <figure>
+                <img
+                  id="proto"
+                  src="/img/Demons/Faucon/Acier.png"
+                  class="center hover"
+                  data-toggle="modal"
+                  data-target="#berserker-img"
+                />
+                <!-- Modal -->
+                <div
+                  class="modal fade"
+                  id="berserker-img"
+                  tabindex="-1"
+                  role="dialog"
+                  aria-labelledby="berserker-img"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button
+                          type="button"
+                          class="close"
+                          data-dismiss="modal"
+                          aria-label="Close"
+                        >
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <img
+                          src="/img/Demons/Faucon/Acier.png"
+                          class="modal-image img-fluid"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Modal -->
+              </figure>
+            </div>
+            <p>
+              <strong> Description :</strong>
+              Les Chevaliers de la Sainte Chaîne de Fer, dirigés par Farnese,
+              sont une unité religieuse chargée de pourchasser les hérétiques.
+              Guts est leur cible en raison de ses liens avec les forces
+              démoniaques et son passé violent.
+            </p>
+            <br />
+            <p>
+              <strong> Description du Duel:</strong>
+              Le combat commence lorsque Guts est repéré par les Chevaliers de
+              la Sainte Chaîne de Fer. Farnese ordonne son arrestation, mais
+              Guts, refusant de se rendre, engage le combat. Guts affronte
+              d'abord les soldats ordinaires de la troupe, les éliminant
+              rapidement grâce à sa force brute et à la puissance de sa
+              Dragonslayer. Farnese, bien que déterminée, est dépassée par la
+              brutalité et l'expérience de Guts. Serpico intervient pour
+              protéger Farnese, utilisant sa rapidité et son agilité pour tenter
+              de prendre Guts par surprise. Cependant, Guts parvient à anticiper
+              ses mouvements et le repousse avec force. Le combat entre Guts et
+              Serpico est marqué par des échanges rapides et techniques, Serpico
+              utilisant le terrain à son avantage pour essayer de déséquilibrer
+              Guts. Azan entre alors en scène, utilisant sa massue pour
+              affronter Guts dans un combat intense. La force brute d'Azan et
+              son expérience rendent le duel difficile pour Guts, mais il
+              parvient à trouver une ouverture et à le désarmer temporairement.
+              Azan montre une grande résilience, continuant à se battre malgré
+              les coups puissants de Guts. Le tournant du combat survient
+              lorsque Guts parvient à désarmer et à maîtriser Farnese, montrant
+              qu'il ne souhaite pas la tuer mais simplement se défendre. Ce
+              moment de vulnérabilité pour Farnese est crucial, car il la
+              confronte à la réalité de la force de Guts et la complexité de ses
+              motivations.
+            </p>
+            <br />
+
+            <p>
+              <strong>Conséquences du Duel : </strong>
+              Le combat se termine avec Guts victorieux, mais il décide de ne
+              pas tuer ses adversaires, réalisant qu'ils ne sont pas ses
+              véritables ennemis mais plutôt des humains pris dans des conflits
+              plus grands. Cet affrontement marque le début d'une relation
+              complexe entre Guts et Farnese, qui commence à remettre en
+              question ses croyances et son rôle en tant qu'inquisitrice. Cette
+              bataille montre non seulement la force et la détermination de
+              Guts, mais aussi la profondeur des personnages de Farnese, Serpico
+              et Azan, qui deviendront plus tard des alliés importants dans sa
+              quête. Elle souligne également les tensions entre la quête
+              personnelle de Guts et les forces religieuses et politiques de son
+              monde.
+            </p>
+            <br />
+
+            <!-- La Nuit avec Farnese contre les Monstres  -->
+            <li class="mangatitle">
+              <h2 style="text-align: center">
+                La Nuit avec Farnese contre les Monstres
+              </h2>
+            </li>
+
+            <div>
+              <figure>
+                <img
+                  id="proto"
+                  src="/img/Demons/Faucon/Nuit1.png"
+                  class="center hover"
+                  data-toggle="modal"
+                  data-target="#berserker-img"
+                />
+                <!-- Modal -->
+                <div
+                  class="modal fade"
+                  id="berserker-img"
+                  tabindex="-1"
+                  role="dialog"
+                  aria-labelledby="berserker-img"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button
+                          type="button"
+                          class="close"
+                          data-dismiss="modal"
+                          aria-label="Close"
+                        >
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <img
+                          src="/img/Demons/Faucon/Nuit1.png"
+                          class="modal-image img-fluid"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Modal -->
+              </figure>
+            </div>
+            <p>
+              <strong> Description :</strong>
+              Cette scène se déroule lorsque Guts et Farnese, qui ont été
+              séparés du reste du groupe, doivent affronter une nuit terrifiante
+              pleine de créatures démoniaques. Farnese, confrontée pour la
+              première fois à l'horreur des monstres surnaturels, subit
+              également une possession démoniaque.
+            </p>
+            <br />
+            <p>
+              <strong> Description du Combat:</strong>
+              La nuit commence avec Guts et Farnese se réfugiant dans une forêt
+              sombre après avoir été séparés du reste du groupe. Les monstres
+              apparaissent, attirés par la Marque du Sacrifice de Guts. Farnese,
+              peu habituée à de telles horreurs, est rapidement submergée par la
+              terreur. Guts combat vaillamment les créatures avec sa
+              Dragonslayer, tranchant à travers les monstres avec sa force
+              brute. Cependant, les monstres sont nombreux et attaquent sans
+              relâche. Farnese, paralysée par la peur, devient une cible facile.
+              À un moment critique, une créature démoniaque prend possession du
+              cheval de Farnese, transformant l'animal en un monstre grotesque.
+              Le cheval possédé attaque Farnese, ajoutant une dimension de
+              terreur sexuelle et psychologique à la scène. Farnese est
+              immobilisée par la peur et l'horreur de la situation. Guts, voyant
+              Farnese en danger, redouble d'efforts pour la protéger. Il
+              parvient à tuer le cheval possédé, sauvant Farnese d'une situation
+              cauchemardesque. Cependant, Farnese est ensuite possédée par des
+              esprits démoniaques qui exploitent ses peurs et ses insécurités.
+              Dans un acte de désespoir et de protection, Guts utilise ses
+              compétences de combattant pour exorciser les esprits de Farnese,
+              combattant les démons à la fois physiquement et psychologiquement.
+              Grâce à sa force et à sa détermination, il parvient à libérer
+              Farnese de la possession.
+            </p>
+            <br />
+
+            <p>
+              <strong> Description du Combat:</strong>
+              Cette nuit traumatisante a un impact profond sur Farnese. Elle
+              commence à remettre en question ses croyances et son rôle en tant
+              qu'inquisitrice, réalisant l'ampleur de la cruauté et de l'horreur
+              du monde. Pour Guts, cette nuit est une autre preuve de sa
+              capacité à protéger ceux qui l'entourent, malgré les forces
+              démoniaques qui le pourchassent. Le lien entre Guts et Farnese se
+              renforce, Farnese développant une profonde admiration et une
+              certaine dépendance envers Guts. Elle commence également à voir le
+              monde sous un nouveau jour, ce qui la pousse à changer et à
+              évoluer au fil de l'histoire.
+            </p>
+            <br />
+
+            <div>
+              <figure>
+                <img
+                  id="proto"
+                  src="/img/Demons/Faucon/Nuit2.png"
+                  class="center hover"
+                  data-toggle="modal"
+                  data-target="#berserker-img"
+                />
+                <!-- Modal -->
+                <div
+                  class="modal fade"
+                  id="berserker-img"
+                  tabindex="-1"
+                  role="dialog"
+                  aria-labelledby="berserker-img"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button
+                          type="button"
+                          class="close"
+                          data-dismiss="modal"
+                          aria-label="Close"
+                        >
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <img
+                          src="/img/Demons/Faucon/Nuit2.png"
+                          class="modal-image img-fluid"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Modal -->
+              </figure>
+            </div>
           </ul>
         </div>
       </div>
