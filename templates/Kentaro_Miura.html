@@ -1,484 +1,759 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <script>
-        function loadFile(filename, elementId) {
-            fetch(filename)
-                .then(response => response.text())
-                .then(text => document.getElementById(elementId).innerHTML = text);
-        }
+      function loadFile(filename, elementId) {
+        fetch(filename)
+          .then((response) => response.text())
+          .then(
+            (text) => (document.getElementById(elementId).innerHTML = text)
+          );
+      }
 
-        document.addEventListener("DOMContentLoaded", function() {
-            loadFile('head/head.html', 'head-content');
-            loadFile('header.html', 'header-content');
-        });
+      document.addEventListener("DOMContentLoaded", function () {
+        loadFile("head/head.html", "head-content");
+        loadFile("header.html", "header-content");
+      });
     </script>
-</head>
+  </head>
 
-
-<body id="body">
+  <body id="body">
     <div id="head-content"></div>
     <header id="header-content"></header>
 
     <main id="main">
-        <div class="container">
-            <div>
-                <h1 id="title">KENTARO MIURA</h1>
-                <p id="captioning"><em>Le légendaire mangaka qui a inspiré de nombreuses personnes</em></p>
-            </div>
-            <div>
-                <figure class="img-div-style">
-                    <img id="all-img" src="../img/Kentaro/Kentaro_Miura.png"
-                        data-toggle="modal" data-target="#exampleModal"/>
-                    <!-- Modal -->
-                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
-                        aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <div class="modal-body">
-                                    <img src="../img/Kentaro/Kentaro_Miura.png"
-                                        class="modal-image img-fluid">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Modal -->
-                    <br>
-                    <div class="img-caption">
-                        <figcaption style="text-align: center;">
-                            Kentaro Miura souriant à la caméra avec un portrait de <i>Guts</i> derrière lui.</figcaption>
-                    </div>
-                </figure>
-            </div>
-            <hr>
-            <br>
-            <div>
-                <h2 class="section-style" id="early-life">Kentaro Miura's Début de vie  </h2>
-                <br>
-                <section class="tribute-info">
-                    <p> Kentaro Miura est né le 11 juillet 1966 à Chiba, préfecture de Chiba, au Japon, de deux enfants.
-                        artistes qui étaient étudiants à la Musashino Arts School. Son père créait des storyboards pour
-                        publicités
-                        et sa mère était professeur d'art, ce qui a donné naissance à un parcours artistique naturellement construit.
-                        environnement
-                        cela l'a inspiré à dessiner. Ainsi, en 1973, il commence à expérimenter le dessin sur cahier.
-                    </p>
-                    <p>Dès l'âge de 10 ans en 1976, il crée son premier manga pour ses camarades de classe.
-                        dans un publication scolaire, appelée <em>Miuranger</em>, qui comptait 40 volumes au total. Cependant, c'était
-                        jamais publié dans aucun format officiel, donc les illustrations originales et le scénario sont inconnus. En fait,
-                        un l'image est souvent confondue avec celle de Miuranger, mais il s'agit en fait de son one-shot
-                        histoire post-apocalyptique, <em>Noa</em>.
-                    </p>
-                </section>
-            </div>
-            <div>
-                <figure id="MistakenedMiuranger">
-                    <img id="image2" src="../img/Kentaro/1.png"
-                        class="center" data-toggle="modal" data-target="#noa" />
-                    <!-- Modal -->
-                    <div class="modal fade" id="noa" tabindex="-1" role="dialog" aria-labelledby="noaModalLabel"
-                        aria-hidden="true">
-                        <div class="modal-dialog modal-lg" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <div class="modal-body modal-lg">
-                                    <img src="../img/Kentaro/1.png"
-                                        class="modal-image2 img-fluid">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Modal -->
-                    <br>
-                    <div class="img-caption">
-                        <figcaption style="text-align: center;">
-                           Ceci est une page de l'une des premières œuvres de Miura, <i>Noa</i>. 
-                           Cette photo a été erronée sur de nombreuses plateformes comme quelque chose qu'il dessinait à l'âge de 10 ans.
-                        </figcaption>
-                    </div>
-                </figure>
-            </div>
-            <div>
-                <figure id="Noapic">
-                    <img id="image3" src="../img/Kentaro/2.png"
-                    class="center" data-toggle="modal" data-target="#noaPic" />
-                    <!-- Modal -->
-                    <div class="modal fade" id="noaPic" tabindex="-1" role="dialog" aria-labelledby="noaPic"
-                        aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <div class="modal-body">
-                                    <img src="../img/Kentaro/2.png"
-                                        class="modal-image img-fluid">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Modal -->
-                </figure>
-            </div>
-            <section class="tribute-info">
-                <p>Son deuxième manga a été écrit en 1977, intitulé <em>Ken e no michi (剣への道)</em>, qui est <em>The Way of the Sword</em>
-                   en anglais. C'était sa première œuvre dessinée à l'encre de Chine.
-                </p>
-            <p>Ensuite, il est devenu plus sérieux avec ses œuvres. Au collège, il a commencé à utiliser les trames pour
-                son travail, et il s'est auto-formé pour utiliser des techniques de dessin professionnelles telles que le ton de l'écran.
-                Par la suite, il inscrit dans un cursus artistique au lycée où lui et ses amis ont publié à l'école livrets.
-                C'est à cette époque que Miura commença à se renseigner sur les doujinshis (œuvres de fan art d'artistes existants).
-            </p>
-            <p> En 1982, Miura publie son premier doujinshi dans un magazine produit par des fans. Il s'est lié d'amitié avec d'autres mangas
-                l'artiste Koji Mori. Ensemble, ils ont co-écrit un doujinshi de science-fiction qui a été envoyé au Weekly Shonen Sunday.
-                Cependant, il n’a jamais franchi le dernier tour de sélection. 
-            </p>
-            <p> À l'âge de 18 ans, Miura a brièvement travaillé comme assistante de George Morikawa, auteur de
-                Hajime no Ippo. Comme Miura possédait déjà un talent naturel pour l'art, il fut licencié, car il n'y avait
-                rien de plus que Morikawa ne pouvait lui apprendre. À cette époque, Miura avait déjà un guerrier noir doté d'un
-                énorme épée dans son portefeuille.
-            </p>
-            <p>En 1985, il est accepté à l'université Niho Daigaku où il commence sa carrière artistique. Il a commencé
-                <i>Noa</i> et <i>Futatabi</i> pendant cette période, qui a été soumise au <i>Shonen Magazine</i>. 
-                Résultat, il a gagné un prix pour le meilleur nouvel auteur pour Futatabi et a fait publier Noa dans le magazine vers la fin de l'année.
-                Cependant, en raison d'une divergence d'opinion avec l'un des éditeurs, les deux mangas se sont terminés rapidement.
-            </p>
-
-            </section>
-            <hr>
-            <br>
-            <section class="tribute-info">
-                <h2 class="section-style" id="career">La carrière manga de Kentaro Miura</h2>
-                <br>
-                <p> Le meilleur manga de tous les temps, Berserk, est apparu pour la première fois en 1988. Cette version est aujourd'hui
-                    appeler <i>Berserk : le Prototype</i> - un manga de 48 pages qui a valu à Miura un prix d'une école de manga.</p>
-                <p>Peu de temps après, il termine son doctorat en 1989 et commence un autre manga intitulé <i>Ourou</i>, 
-                    connu sous le nom de <i>Roi des loups</i>. Selon Miura, cela était basé sur un script de Yoshiyuki Okamura,
-                    l'auteur du manga <i>Fist of the North Star</i>. Ce manga a été publié dans Japanese Animal House dans problèmes 5 et 7 de 1989. </p>
-                <p> En 1990, il y a eu d'autres versions pour faire suite à <i>Ourou</i> appelées <i>Ourou Den
-                        (Légende du Roi loup)</i>, qui figurait également sur un scénario écrit par Okamura.</p>
-                <p> La même année, Japanese Animal House a également publié la toute première publication de
-                    Berserk, commencent à gagner du terrain jusqu’à l’arc de l’âge d’or. </p>
-                <p> En 1992, il commence le manga <i>Japan</i> avec Okamura, qui apparaît dans Animal.
-                    Cependant, c'est vers la fin de cette année que Miura a décidé de se consacrer à la poursuite de son manga, <i>Berserk</i>.</p>
-                <p> Plus tard, en raison de la popularité de Berserk, Miura finira par gérer la production.
-                    de 25 épisode animé en série pour Berserk en 1997, diffusée sur Nihon TV au Japon.</p>
-                <p> Actuellement, Berserk a connu beaucoup de succès au Japon et dans le monde. Il a
-                    a publié 40 volumes de son vivant, (il y a actuellement 42 volumes) et a valu à Miura le Prix d'excellence lors de la 6ème édition 
-                    du Prix culturel Tezuka Osamu gagnant un total de 1 million de yens.
-                </p>
-                <p> En 2013, Miura a écrit et illustré un autre manga nommé Gigantomakhia, une mini-série de 6 chapitre. 
-                    La même année, une adaptation cinématographique de <i>Berserk</i> intitulée <i>Berserk : L'âge d'or Arc I - 
-                    L'oeuf du roi conquérant</i> est sorti et a remporté un prix aux Oregon Film Awards.</p>
-                <hr>
-            </section>
-            <br>
-            <section>
-                <div id="manga-list">
-                    <h2 class="section-style">Mangas et illustrations de Kentaro Miura</h2>
-                    <br>
-                    <ul>
-                        <li class="mangatitle">
-                            <h2 style="text-align: center;">Gigantomackhia</h2>
-                        </li>
-                        <p class="description">Une mini-série de 6 chapitres sur une guerre entre l'armée de Zeus et
-                            l'armée géante d'Alcyoneus -  situé 100 millions d'années dans le futur !</p>
-                        <div>
-                            <figure>
-                                <img id="giganto" src="../img/Kentaro/Gigatomackia.png"
-                                  class="center hover" data-toggle="modal"
-                                    data-target="#giganto-img">
-                                <!-- Modal -->
-                                <div class="modal fade" id="giganto-img" tabindex="-1" role="dialog"
-                                    aria-labelledby="giganto-img" aria-hidden="true">
-                                    <div class="modal-dialog" role="document">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <button type="button" class="close" data-dismiss="modal"
-                                                    aria-label="Close">
-                                                    <span aria-hidden="true">&times;</span>
-                                                </button>
-                                            </div>
-                                            <div class="modal-body">
-                                                <img src="../img/Kentaro/Gigatomackia.png"
-                                                    class="modal-image img-fluid">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Modal -->
-                            </figure>
-                        </div>
-                        <br>
-                        <li class="mangatitle">
-                            <h2 style="text-align: center;">Berserk:  </h2>
-                            <h2 style="text-align: center;">Le Prototype </h2>
-                        </li>
-                        <p class="description"> C'est le précurseur de Berserk, mais ne fait pas partie de l'histoire du canon.
-                            L'apparence et la personnalité est différente, tout comme les autres conceptions de personnages. </p>
-                        <div>
-                            <figure>
-                                <img id="proto" src="../img/Kentaro/Prototype.png"
-                                    class="center hover"
-                                    data-toggle="modal" data-target="#berserker-img">
-                                <!-- Modal -->
-                                <div class="modal fade" id="berserker-img" tabindex="-1" role="dialog"
-                                    aria-labelledby="berserker-img" aria-hidden="true">
-                                    <div class="modal-dialog" role="document">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <button type="button" class="close" data-dismiss="modal"
-                                                    aria-label="Close">
-                                                    <span aria-hidden="true">&times;</span>
-                                                </button>
-                                            </div>
-                                            <div class="modal-body">
-                                                <img src="../img/Kentaro/Prototype.png"
-                                                    class="modal-image img-fluid">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Modal -->
-                            </figure>
-                        </div>
-                        <br>
-                        <li class="mangatitle">
-                            <h2 style="text-align: center;">Noa</h2>
-                        </li>
-                        <p class="description"> Ce manga parle de survie dans une ère post-apocalyptique avec plus
-                            avancé technologie en suivant les personnages Noah et Angel !</p>
-                        <div>
-                            <figure>
-                                <img id="Noa-three"
-                                    src="../img/Kentaro/Noa.png"
-                                   class="center hover" data-toggle="modal"
-                                    data-target="#noathree-img">
-                                <!-- Modal -->
-                                <div class="modal fade" id="noathree-img" tabindex="-1" role="dialog"
-                                    aria-labelledby="noathree" aria-hidden="true">
-                                    <div class="modal-dialog" role="document">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <button type="button" class="close" data-dismiss="modal"
-                                                    aria-label="Close">
-                                                    <span aria-hidden="true">&times;</span>
-                                                </button>
-                                            </div>
-                                            <div class="modal-body">
-                                                <img src="../img/Kentaro/Noa.png"
-                                                    class="modal-image img-fluid">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Modal -->
-                            </figure>
-                        </div>
-                        <br>
-                        <li class="mangatitle">
-                            <h2 style="text-align: center;">Futatabi</h2>
-                        </li>
-                        <p class="description">Un apprenti mécanicien vivant sous terre rencontre un intrus nommé Vénus qui prétend venir 
-                            d'un autre monde légèrement différent du sien ! Le la police est après Vénus... 
-                        </p>
-                        <div>
-                            <figure>
-                                <img id="Futatabi" src="../img/Kentaro/Futatabi.png"
-                                    class="center hover" class="center"
-                                    data-toggle="modal" data-target="#futatabi-img">
-                                <!-- Modal -->
-                                <div class="modal fade" id="futatabi-img" tabindex="-1" role="dialog"
-                                    aria-labelledby="futatabi-img" aria-hidden="true">
-                                    <div class="modal-dialog" role="document">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <button type="button" class="close" data-dismiss="modal"
-                                                    aria-label="Close">
-                                                    <span aria-hidden="true">&times;</span>
-                                                </button>
-                                            </div>
-                                            <div class="modal-body">
-                                                <img src="../img/Kentaro/Futatabi.png"
-                                                    class="modal-image img-fluid">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Modal -->
-                            </figure>
-                        </div>
-                        <br>
-                        <li class="mangatitle">
-                            <h2 style="text-align: center;">Japan</h2>
-                        </li>
-                        <p class="description"> Il s'agit d'un manga écrit par Buronson et illustré par Kentaro Miura.
-                            alors publié dans le magazine manga seinen de Hakusensha <i>Young Animal</i> en 1992. 
-                            Il s'agit d'un Yakuza amoureux d'une journaliste de télévision qui fait un reportage sur la façon dont les étrangers perçoivent 
-                            les Japonais et comment les Japonais se voient. Un tremblement de terre survient et des Carthaginois fantômes les amènent vers 
-                            un avenir où les Japonais ont émigré vers d'autres pays et sont devenus opprimé.
-                        </p>
-                        <div>
-                            <figure>
-                                <img id="Japan"
-                                    src="../img/Kentaro/Japan.png"
-                                    class="center hover" data-toggle="modal"
-                                    data-target="#japan-img">
-                                <!-- Modal -->
-                                <div class="modal fade" id="japan-img" tabindex="-1" role="dialog"
-                                    aria-labelledby="japan-img" aria-hidden="true">
-                                    <div class="modal-dialog" role="document">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <button type="button" class="close" data-dismiss="modal"
-                                                    aria-label="Close">
-                                                    <span aria-hidden="true">&times;</span>
-                                                </button>
-                                            </div>
-                                            <div class="modal-body">
-                                                <img src="../img/Kentaro/Japan.png"
-                                                    class="modal-image img-fluid">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Modal -->
-                            </figure>
-                        </div>
-                        <br>
-                        <li class="mangatitle">
-                            <h2 style="text-align: center;">Roi des loups</h2>
-                        </li>
-                        <p class="description"> Un historien nommé Iba disparaît seul durant son voyage pour étudier l'ancienne route de la soie. 
-                            Sa petite amie Kyoko part à sa recherche un an plus tard, mais se fait aspirer par un vortex pour arriver dans un monde
-                            où son petit ami est un guerrier-esclave sous le règne de Gengis Khan en Mongolie au XIIIe siècle. 
-                            La créativité de Miura est vraiment hors norme.</p>
-                        <div>
-                            <figure>
-                                <img id="King"
-                                    src="../img/Kentaro/King_of_Wolves.png"
-                                  class="center hover"
-                                    data-toggle="modal" data-target="#king-img">
-                                <!-- Modal -->
-                                <div class="modal fade" id="king-img" tabindex="-1" role="dialog"
-                                    aria-labelledby="king-img" aria-hidden="true">
-                                    <div class="modal-dialog" role="document">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <button type="button" class="close" data-dismiss="modal"
-                                                    aria-label="Close">
-                                                    <span aria-hidden="true">&times;</span>
-                                                </button>
-                                            </div>
-                                            <div class="modal-body">
-                                                <img src="../img/Kentaro/King_of_Wolves.png"
-                                                    class="modal-image img-fluid">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Modal -->
-                            </figure>
-                        </div>
-                        <br>
-                        <li class="mangatitle">
-                            <h2 style="text-align: center;">Duranki</h2>
-                        </li>
-                        <p class="description"> Basé sur les mythes grecs, mésopotamiens et sumériens, Duranki suit un enfant nommé Usumgallu qui 
-                            est ni un dieu ni un humain, ni une femme ou un homme à travers leurs voyages à travers un monde mythique.
-                            Ce manga a été écrit, produit par Kentaro Miura et illustré par son studio de manga, Studio Gaga.
-                        </p>
-                        <div>
-                            <figure>
-                                <img id="Duranki"
-                                    src="../img/Kentaro/Duranki.png"
-                                    class="center hover" data-toggle="modal"
-                                    data-target="#duranki-img">
-                                <!-- Modal -->
-                                <div class="modal fade" id="duranki-img" tabindex="-1" role="dialog"
-                                    aria-labelledby="duranki-img" aria-hidden="true">
-                                    <div class="modal-dialog" role="document">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <button type="button" class="close" data-dismiss="modal"
-                                                    aria-label="Close">
-                                                    <span aria-hidden="true">&times;</span>
-                                                </button>
-                                            </div>
-                                            <div class="modal-body">
-                                                <img src="../img/Kentaro/Duranki.png"
-                                                    class="modal-image img-fluid">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Modal -->
-                            </figure>
-                        </div>
-                        <br>
-                        <li class="mangatitle">
-                            <h2 style="text-align: center;">Berserk</h2>
-                        </li>
-                        <p class="description"> Premierement, c'est le meilleur manga de tous les temps (sans prétention). 
-                            C'est une histoire d'une extrêmement violence se déroulant dans une Europe dark-fantasy 
-                            qui suit à la fois Guts, un épéiste sombre, et Griffith, le chef de la « Troupe des Faucons", 
-                            un groupe de mercenaires à travers l'une des narrations et des personnages les plus délibérés et les plus approfondis de 
-                            l'histoires du développement. Que dire de plus ? Allez le lire tout de suite !
-                        </p>
-                        <br>
-                        <div>
-                            <figure>
-                                <img id="Berserk" src="../img/Kentaro/Berserk.png" class="center hover" data-toggle="modal" data-target="#berserk-official-img">
-                                <!-- Modal -->
-                                <div class="modal fade" id="berserk-official-img" tabindex="-1" role="dialog"
-                                    aria-labelledby="berserk-official-img" aria-hidden="true">
-                                    <div class="modal-dialog" role="document">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <button type="button" class="close" data-dismiss="modal"
-                                                    aria-label="Close">
-                                                    <span aria-hidden="true">&times;</span>
-                                                </button>
-                                            </div>
-                                            <div class="modal-body">
-                                                <img src="../img/Kentaro/Berserk.png"
-                                                    class="modal-image img-fluid">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Modal -->
-                            </figure>
-                        </div>
-                    </ul>
-                </div>
-            </section>
+      <div class="container">
+        <div>
+          <h1 id="title">KENTARO MIURA</h1>
+          <p id="captioning">
+            <em>Le légendaire mangaka qui a inspiré de nombreuses personnes</em>
+          </p>
         </div>
+        <div>
+          <figure class="img-div-style">
+            <img
+              id="all-img"
+              src="../img/Kentaro/Kentaro_Miura.png"
+              data-toggle="modal"
+              data-target="#exampleModal"
+            />
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="exampleModal"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <img
+                      src="../img/Kentaro/Kentaro_Miura.png"
+                      class="modal-image img-fluid"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Modal -->
+            <br />
+            <div class="img-caption">
+              <figcaption style="text-align: center">
+                Kentaro Miura souriant à la caméra avec un portrait de
+                <i>Guts</i> derrière lui.
+              </figcaption>
+            </div>
+          </figure>
+        </div>
+        <hr />
+        <br />
+        <div>
+          <h2 class="section-style" id="early-life">
+            Kentaro Miura's Début de vie
+          </h2>
+          <br />
+          <section class="tribute-info">
+            <p>
+              Kentaro Miura est né le 11 juillet 1966 à Chiba, préfecture de
+              Chiba, au Japon, de deux enfants. artistes qui étaient étudiants à
+              la Musashino Arts School. Son père créait des storyboards pour
+              publicités et sa mère était professeur d'art, ce qui a donné
+              naissance à un parcours artistique naturellement construit.
+              environnement cela l'a inspiré à dessiner. Ainsi, en 1973, il
+              commence à expérimenter le dessin sur cahier.
+            </p>
+            <p>
+              Dès l'âge de 10 ans en 1976, il crée son premier manga pour ses
+              camarades de classe. dans un publication scolaire, appelée
+              <em>Miuranger</em>, qui comptait 40 volumes au total. Cependant,
+              c'était jamais publié dans aucun format officiel, donc les
+              illustrations originales et le scénario sont inconnus. En fait, un
+              l'image est souvent confondue avec celle de Miuranger, mais il
+              s'agit en fait de son one-shot histoire post-apocalyptique,
+              <em>Noa</em>.
+            </p>
+          </section>
+        </div>
+        <div>
+          <figure id="MistakenedMiuranger">
+            <img
+              id="image2"
+              src="../img/Kentaro/1.png"
+              class="center"
+              data-toggle="modal"
+              data-target="#noa"
+            />
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="noa"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="noaModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body modal-lg">
+                    <img
+                      src="../img/Kentaro/1.png"
+                      class="modal-image2 img-fluid"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Modal -->
+            <br />
+            <div class="img-caption">
+              <figcaption style="text-align: center">
+                Ceci est une page de l'une des premières œuvres de Miura,
+                <i>Noa</i>. Cette photo a été erronée sur de nombreuses
+                plateformes comme quelque chose qu'il dessinait à l'âge de 10
+                ans.
+              </figcaption>
+            </div>
+          </figure>
+        </div>
+        <div>
+          <figure id="Noapic">
+            <img
+              id="image3"
+              src="../img/Kentaro/2.png"
+              class="center"
+              data-toggle="modal"
+              data-target="#noaPic"
+            />
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="noaPic"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="noaPic"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <img
+                      src="../img/Kentaro/2.png"
+                      class="modal-image img-fluid"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Modal -->
+          </figure>
+        </div>
+        <section class="tribute-info">
+          <p>
+            Son deuxième manga a été écrit en 1977, intitulé
+            <em>Ken e no michi (剣への道)</em>, qui est
+            <em>The Way of the Sword</em>
+            en anglais. C'était sa première œuvre dessinée à l'encre de Chine.
+          </p>
+          <p>
+            Ensuite, il est devenu plus sérieux avec ses œuvres. Au collège, il
+            a commencé à utiliser les trames pour son travail, et il s'est
+            auto-formé pour utiliser des techniques de dessin professionnelles
+            telles que le ton de l'écran. Par la suite, il inscrit dans un
+            cursus artistique au lycée où lui et ses amis ont publié à l'école
+            livrets. C'est à cette époque que Miura commença à se renseigner sur
+            les doujinshis (œuvres de fan art d'artistes existants).
+          </p>
+          <p>
+            En 1982, Miura publie son premier doujinshi dans un magazine produit
+            par des fans. Il s'est lié d'amitié avec d'autres mangas l'artiste
+            Koji Mori. Ensemble, ils ont co-écrit un doujinshi de
+            science-fiction qui a été envoyé au Weekly Shonen Sunday. Cependant,
+            il n’a jamais franchi le dernier tour de sélection.
+          </p>
+          <p>
+            À l'âge de 18 ans, Miura a brièvement travaillé comme assistante de
+            George Morikawa, auteur de Hajime no Ippo. Comme Miura possédait
+            déjà un talent naturel pour l'art, il fut licencié, car il n'y avait
+            rien de plus que Morikawa ne pouvait lui apprendre. À cette époque,
+            Miura avait déjà un guerrier noir doté d'un énorme épée dans son
+            portefeuille.
+          </p>
+          <p>
+            En 1985, il est accepté à l'université Niho Daigaku où il commence
+            sa carrière artistique. Il a commencé <i>Noa</i> et
+            <i>Futatabi</i> pendant cette période, qui a été soumise au
+            <i>Shonen Magazine</i>. Résultat, il a gagné un prix pour le
+            meilleur nouvel auteur pour Futatabi et a fait publier Noa dans le
+            magazine vers la fin de l'année. Cependant, en raison d'une
+            divergence d'opinion avec l'un des éditeurs, les deux mangas se sont
+            terminés rapidement.
+          </p>
+        </section>
+        <hr />
+        <br />
+        <section class="tribute-info">
+          <h2 class="section-style" id="career">
+            La carrière manga de Kentaro Miura
+          </h2>
+          <br />
+          <p>
+            Le meilleur manga de tous les temps, Berserk, est apparu pour la
+            première fois en 1988. Cette version est aujourd'hui appeler
+            <i>Berserk : le Prototype</i> - un manga de 48 pages qui a valu à
+            Miura un prix d'une école de manga.
+          </p>
+          <p>
+            Peu de temps après, il termine son doctorat en 1989 et commence un
+            autre manga intitulé <i>Ourou</i>, connu sous le nom de
+            <i>Roi des loups</i>. Selon Miura, cela était basé sur un script de
+            Yoshiyuki Okamura, l'auteur du manga <i>Fist of the North Star</i>.
+            Ce manga a été publié dans Japanese Animal House dans problèmes 5 et
+            7 de 1989.
+          </p>
+          <p>
+            En 1990, il y a eu d'autres versions pour faire suite à
+            <i>Ourou</i> appelées <i>Ourou Den (Légende du Roi loup)</i>, qui
+            figurait également sur un scénario écrit par Okamura.
+          </p>
+          <p>
+            La même année, Japanese Animal House a également publié la toute
+            première publication de Berserk, commencent à gagner du terrain
+            jusqu’à l’arc de l’âge d’or.
+          </p>
+          <p>
+            En 1992, il commence le manga <i>Japan</i> avec Okamura, qui
+            apparaît dans Animal. Cependant, c'est vers la fin de cette année
+            que Miura a décidé de se consacrer à la poursuite de son manga,
+            <i>Berserk</i>.
+          </p>
+          <p>
+            Plus tard, en raison de la popularité de Berserk, Miura finira par
+            gérer la production. de 25 épisode animé en série pour Berserk en
+            1997, diffusée sur Nihon TV au Japon.
+          </p>
+          <p>
+            Actuellement, Berserk a connu beaucoup de succès au Japon et dans le
+            monde. Il a a publié 40 volumes de son vivant, (il y a actuellement
+            42 volumes) et a valu à Miura le Prix d'excellence lors de la 6ème
+            édition du Prix culturel Tezuka Osamu gagnant un total de 1 million
+            de yens.
+          </p>
+          <p>
+            En 2013, Miura a écrit et illustré un autre manga nommé
+            Gigantomakhia, une mini-série de 6 chapitre. La même année, une
+            adaptation cinématographique de <i>Berserk</i> intitulée
+            <i>Berserk : L'âge d'or Arc I - L'oeuf du roi conquérant</i> est
+            sorti et a remporté un prix aux Oregon Film Awards.
+          </p>
+          <hr />
+        </section>
+        <br />
+        <section>
+          <div id="manga-list">
+            <h2 class="section-style">
+              Mangas et illustrations de Kentaro Miura
+            </h2>
+            <br />
+            <ul>
+              <li class="mangatitle">
+                <h2 style="text-align: center">Gigantomackhia</h2>
+              </li>
+              <p>
+                Une mini-série de 6 chapitres sur une guerre entre l'armée de
+                Zeus et l'armée géante d'Alcyoneus - situé 100 millions d'années
+                dans le futur !
+              </p>
+              <div>
+                <figure>
+                  <img
+                    id="giganto"
+                    src="../img/Kentaro/Gigatomackia.png"
+                    class="center hover"
+                    data-toggle="modal"
+                    data-target="#giganto-img"
+                  />
+                  <!-- Modal -->
+                  <div
+                    class="modal fade"
+                    id="giganto-img"
+                    tabindex="-1"
+                    role="dialog"
+                    aria-labelledby="giganto-img"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button
+                            type="button"
+                            class="close"
+                            data-dismiss="modal"
+                            aria-label="Close"
+                          >
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <img
+                            src="../img/Kentaro/Gigatomackia.png"
+                            class="modal-image img-fluid"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Modal -->
+                </figure>
+              </div>
+              <br />
+              <li class="mangatitle">
+                <h2 style="text-align: center">Berserk:</h2>
+                <h2 style="text-align: center">Le Prototype</h2>
+              </li>
+              <p>
+                C'est le précurseur de Berserk, mais ne fait pas partie de
+                l'histoire du canon. L'apparence et la personnalité est
+                différente, tout comme les autres conceptions de personnages.
+              </p>
+              <div>
+                <figure>
+                  <img
+                    id="proto"
+                    src="../img/Kentaro/Prototype.png"
+                    class="center hover"
+                    data-toggle="modal"
+                    data-target="#berserker-img"
+                  />
+                  <!-- Modal -->
+                  <div
+                    class="modal fade"
+                    id="berserker-img"
+                    tabindex="-1"
+                    role="dialog"
+                    aria-labelledby="berserker-img"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button
+                            type="button"
+                            class="close"
+                            data-dismiss="modal"
+                            aria-label="Close"
+                          >
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <img
+                            src="../img/Kentaro/Prototype.png"
+                            class="modal-image img-fluid"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Modal -->
+                </figure>
+              </div>
+              <br />
+              <li class="mangatitle">
+                <h2 style="text-align: center">Noa</h2>
+              </li>
+              <p>
+                Ce manga parle de survie dans une ère post-apocalyptique avec
+                plus avancé technologie en suivant les personnages Noah et Angel
+                !
+              </p>
+              <div>
+                <figure>
+                  <img
+                    id="Noa-three"
+                    src="../img/Kentaro/Noa.png"
+                    class="center hover"
+                    data-toggle="modal"
+                    data-target="#noathree-img"
+                  />
+                  <!-- Modal -->
+                  <div
+                    class="modal fade"
+                    id="noathree-img"
+                    tabindex="-1"
+                    role="dialog"
+                    aria-labelledby="noathree"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button
+                            type="button"
+                            class="close"
+                            data-dismiss="modal"
+                            aria-label="Close"
+                          >
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <img
+                            src="../img/Kentaro/Noa.png"
+                            class="modal-image img-fluid"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Modal -->
+                </figure>
+              </div>
+              <br />
+              <li class="mangatitle">
+                <h2 style="text-align: center">Futatabi</h2>
+              </li>
+              <p>
+                Un apprenti mécanicien vivant sous terre rencontre un intrus
+                nommé Vénus qui prétend venir d'un autre monde légèrement
+                différent du sien ! Le la police est après Vénus...
+              </p>
+              <div>
+                <figure>
+                  <img
+                    id="Futatabi"
+                    src="../img/Kentaro/Futatabi.png"
+                    class="center hover"
+                    class="center"
+                    data-toggle="modal"
+                    data-target="#futatabi-img"
+                  />
+                  <!-- Modal -->
+                  <div
+                    class="modal fade"
+                    id="futatabi-img"
+                    tabindex="-1"
+                    role="dialog"
+                    aria-labelledby="futatabi-img"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button
+                            type="button"
+                            class="close"
+                            data-dismiss="modal"
+                            aria-label="Close"
+                          >
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <img
+                            src="../img/Kentaro/Futatabi.png"
+                            class="modal-image img-fluid"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Modal -->
+                </figure>
+              </div>
+              <br />
+              <li class="mangatitle">
+                <h2 style="text-align: center">Japan</h2>
+              </li>
+              <p>
+                Il s'agit d'un manga écrit par Buronson et illustré par Kentaro
+                Miura. alors publié dans le magazine manga seinen de Hakusensha
+                <i>Young Animal</i> en 1992. Il s'agit d'un Yakuza amoureux
+                d'une journaliste de télévision qui fait un reportage sur la
+                façon dont les étrangers perçoivent les Japonais et comment les
+                Japonais se voient. Un tremblement de terre survient et des
+                Carthaginois fantômes les amènent vers un avenir où les Japonais
+                ont émigré vers d'autres pays et sont devenus opprimé.
+              </p>
+              <div>
+                <figure>
+                  <img
+                    id="Japan"
+                    src="../img/Kentaro/Japan.png"
+                    class="center hover"
+                    data-toggle="modal"
+                    data-target="#japan-img"
+                  />
+                  <!-- Modal -->
+                  <div
+                    class="modal fade"
+                    id="japan-img"
+                    tabindex="-1"
+                    role="dialog"
+                    aria-labelledby="japan-img"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button
+                            type="button"
+                            class="close"
+                            data-dismiss="modal"
+                            aria-label="Close"
+                          >
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <img
+                            src="../img/Kentaro/Japan.png"
+                            class="modal-image img-fluid"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Modal -->
+                </figure>
+              </div>
+              <br />
+              <li class="mangatitle">
+                <h2 style="text-align: center">Roi des loups</h2>
+              </li>
+              <p>
+                Un historien nommé Iba disparaît seul durant son voyage pour
+                étudier l'ancienne route de la soie. Sa petite amie Kyoko part à
+                sa recherche un an plus tard, mais se fait aspirer par un vortex
+                pour arriver dans un monde où son petit ami est un
+                guerrier-esclave sous le règne de Gengis Khan en Mongolie au
+                XIIIe siècle. La créativité de Miura est vraiment hors norme.
+              </p>
+              <div>
+                <figure>
+                  <img
+                    id="King"
+                    src="../img/Kentaro/King_of_Wolves.png"
+                    class="center hover"
+                    data-toggle="modal"
+                    data-target="#king-img"
+                  />
+                  <!-- Modal -->
+                  <div
+                    class="modal fade"
+                    id="king-img"
+                    tabindex="-1"
+                    role="dialog"
+                    aria-labelledby="king-img"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button
+                            type="button"
+                            class="close"
+                            data-dismiss="modal"
+                            aria-label="Close"
+                          >
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <img
+                            src="../img/Kentaro/King_of_Wolves.png"
+                            class="modal-image img-fluid"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Modal -->
+                </figure>
+              </div>
+              <br />
+              <li class="mangatitle">
+                <h2 style="text-align: center">Duranki</h2>
+              </li>
+              <p>
+                Basé sur les mythes grecs, mésopotamiens et sumériens, Duranki
+                suit un enfant nommé Usumgallu qui est ni un dieu ni un humain,
+                ni une femme ou un homme à travers leurs voyages à travers un
+                monde mythique. Ce manga a été écrit, produit par Kentaro Miura
+                et illustré par son studio de manga, Studio Gaga.
+              </p>
+              <div>
+                <figure>
+                  <img
+                    id="Duranki"
+                    src="../img/Kentaro/Duranki.png"
+                    class="center hover"
+                    data-toggle="modal"
+                    data-target="#duranki-img"
+                  />
+                  <!-- Modal -->
+                  <div
+                    class="modal fade"
+                    id="duranki-img"
+                    tabindex="-1"
+                    role="dialog"
+                    aria-labelledby="duranki-img"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button
+                            type="button"
+                            class="close"
+                            data-dismiss="modal"
+                            aria-label="Close"
+                          >
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <img
+                            src="../img/Kentaro/Duranki.png"
+                            class="modal-image img-fluid"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Modal -->
+                </figure>
+              </div>
+              <br />
+              <li class="mangatitle">
+                <h2 style="text-align: center">Berserk</h2>
+              </li>
+              <p>
+                Premierement, c'est le meilleur manga de tous les temps (sans
+                prétention). C'est une histoire d'une extrêmement violence se
+                déroulant dans une Europe dark-fantasy qui suit à la fois Guts,
+                un épéiste sombre, et Griffith, le chef de la « Troupe des
+                Faucons", un groupe de mercenaires à travers l'une des
+                narrations et des personnages les plus délibérés et les plus
+                approfondis de l'histoires du développement. Que dire de plus ?
+                Allez le lire tout de suite !
+              </p>
+              <br />
+              <div>
+                <figure>
+                  <img
+                    id="Berserk"
+                    src="../img/Kentaro/Berserk.png"
+                    class="center hover"
+                    data-toggle="modal"
+                    data-target="#berserk-official-img"
+                  />
+                  <!-- Modal -->
+                  <div
+                    class="modal fade"
+                    id="berserk-official-img"
+                    tabindex="-1"
+                    role="dialog"
+                    aria-labelledby="berserk-official-img"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button
+                            type="button"
+                            class="close"
+                            data-dismiss="modal"
+                            aria-label="Close"
+                          >
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <img
+                            src="../img/Kentaro/Berserk.png"
+                            class="modal-image img-fluid"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Modal -->
+                </figure>
+              </div>
+            </ul>
+          </div>
+        </section>
+      </div>
     </main>
-</body>
+  </body>
 
-<!-- Custom JavaScript -->
+  <!-- Custom JavaScript -->
 
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  <script
+    src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
     integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
-
+    crossorigin="anonymous"
+  ></script>
 </html>

@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <link href="/style/style.css" rel="stylesheet" />
+    <title>Berserk ⚔</title>
+    <script>
+      function loadFile(filename, elementId) {
+        fetch(filename)
+          .then((response) => response.text())
+          .then(
+            (text) => (document.getElementById(elementId).innerHTML = text)
+          );
+      }
+
+      document.addEventListener("DOMContentLoaded", function () {
+        loadFile("/templates/head/head-content.html", "head-content");
+        loadFile("/templates/header.html", "header-content");
+      });
+    </script>
+  </head>
+
+  <body id="body">
+    <div id="head-content"></div>
+    <header id="header-content"></header>
+
+    <main id="main">
+      <div class="container">
+        <div>
+          <h1 id="title">L’ère des châtiments</h1>
+          <p style="text-align: center">Tomes 14 à 21</p>
+          <div>
+            <figure>
+              <img
+                id="proto"
+                src="/img/Demons/Chatiments/Chatiments.png"
+                class="center hover"
+                data-toggle="modal"
+                data-target="#berserker-img"
+              />
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="berserker-img"
+                tabindex="-1"
+                role="dialog"
+                aria-labelledby="berserker-img"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <img
+                        src="/img/Demons/Chatiments/Chatiments.png"
+                        class="modal-image img-fluid"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Modal -->
+            </figure>
+          </div>
+        </div>
+        <p style="text-align: center">Differents chapitres :</p>
+        <p style="text-align: center"><a href="#Enfants">Enfants perdus</a></p>
+        <p style="text-align: center"><a href="#Enchaines">Les enchaînés</a></p>
+        <p style="text-align: center"><a href="#Naissance">La Naissance</a></p>
+        <br />
+
+        <h2 id="Enfants" style="text-align: center">Les Enfants perdus</h2>
+        <h3 style="text-align: center">Tomes 14 à 16</h3>
+        <br />
+
+        <div id="manga-list">
+          <ul>
+            <!-- L'arbre possédé -->
+            <li class="mangatitle">
+              <h2 style="text-align: center">L'arbre possédé</h2>
+            </li>
+
+            <div>
+              <figure>
+                <img
+                  id="proto"
+                  src="/img/Demons/Chatiments/Arbre.png"
+                  class="center hover"
+                  data-toggle="modal"
+                  data-target="#berserker-img"
+                />
+                <!-- Modal -->
+                <div
+                  class="modal fade"
+                  id="berserker-img"
+                  tabindex="-1"
+                  role="dialog"
+                  aria-labelledby="berserker-img"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button
+                          type="button"
+                          class="close"
+                          data-dismiss="modal"
+                          aria-label="Close"
+                        >
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <img
+                          src="/img/Demons/Chatiments/Arbre.png"
+                          class="modal-image img-fluid"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Modal -->
+              </figure>
+            </div>
+
+            <p>
+              <strong> Description :</strong>
+              Guts, seul, est confronté à un arbre géant animé par des esprits
+              maléfiques, un ennemi puissant et surnaturel. Cet arbre se trouve
+              dans une forêt et attaque les voyageurs qui osent s'aventurer dans
+              son territoire.
+            </p>
+            <br />
+
+            <p>
+              <strong> Description du combat :</strong>
+              Le combat commence lorsque Guts, en traversant la forêt seul, est
+              attaqué par l'Arbre Possédé. L'arbre utilise ses branches massives
+              pour tenter d'écraser et de capturer Guts. Guts réagit avec sa
+              force brute et sa maîtrise, tranchant à travers les branches de
+              l'arbre. Cependant, les capacités de régénération rapide de
+              l'arbre rendent la tâche difficile. Guts doit utiliser toutes ses
+              compétences et son expérience de combat pour éviter les attaques
+              de l'arbre et trouver une ouverture pour infliger des dégâts
+              significatifs. Le tournant du combat survient lorsque Guts
+              parvient à identifier le cœur maléfique de l'arbre, la source de
+              son animation. En utilisant sa force surhumaine et sa
+              détermination, Guts réussit à porter un coup décisif, tranchant le
+              tronc de l'arbre et détruisant le cœur maléfique qui l'animait.
+            </p>
+            <br />
+
+            <!-- Rosine  -->
+            <li class="mangatitle">
+              <h2 style="text-align: center">Rosine</h2>
+            </li>
+
+            <div>
+              <figure>
+                <img
+                  id="proto"
+                  src="/img/Demons/Chatiments/Rosine.png"
+                  class="center hover"
+                  data-toggle="modal"
+                  data-target="#berserker-img"
+                />
+                <!-- Modal -->
+                <div
+                  class="modal fade"
+                  id="berserker-img"
+                  tabindex="-1"
+                  role="dialog"
+                  aria-labelledby="berserker-img"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button
+                          type="button"
+                          class="close"
+                          data-dismiss="modal"
+                          aria-label="Close"
+                        >
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <img
+                          src="/img/Demons/Chatiments/Acier.png"
+                          class="modal-image img-fluid"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Modal -->
+              </figure>
+            </div>
+            <p>
+              <strong> Description :</strong> Rosine est une apôtre qui prend la
+              forme d'une fée insectoïde. Elle était autrefois une jeune fille
+              humaine avant de se transformer en un apôtre.
+            </p>
+            <br />
+            <p>
+              <strong> Affinités et Pouvoirs :</strong> Rosine peut voler à
+              grande vitesse et utiliser des illusions pour désorienter ses
+              adversaires. Elle commande également une armée de créatures
+              insectoïdes.
+            </p>
+            <br />
+
+            <h2 id="Enchaines" style="text-align: center">Les enchaînés</h2>
+            <h3 style="text-align: center">Tomes 16 à 17</h3>
+
+            <!-- Guts contre la troupe de la chaîne de fer sacré  -->
+            <li class="mangatitle">
+              <h2 style="text-align: center">
+                Guts contre la troupe de la chaîne de fer sacré
+              </h2>
+            </li>
+
+            <div>
+              <figure>
+                <img
+                  id="proto"
+                  src="/img/Demons/Chatiments/Acier.png"
+                  class="center hover"
+                  data-toggle="modal"
+                  data-target="#berserker-img"
+                />
+                <!-- Modal -->
+                <div
+                  class="modal fade"
+                  id="berserker-img"
+                  tabindex="-1"
+                  role="dialog"
+                  aria-labelledby="berserker-img"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button
+                          type="button"
+                          class="close"
+                          data-dismiss="modal"
+                          aria-label="Close"
+                        >
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <img
+                          src="/img/Demons/Chatiments/Acier.png"
+                          class="modal-image img-fluid"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Modal -->
+              </figure>
+            </div>
+            <p>
+              <strong> Description :</strong>
+              Les Chevaliers de la Sainte Chaîne de Fer, dirigés par Farnese,
+              sont une unité religieuse chargée de pourchasser les hérétiques.
+              Guts est leur cible en raison de ses liens avec les forces
+              démoniaques et son passé violent.
+            </p>
+            <br />
+            <p>
+              <strong> Description du Duel:</strong>
+              Le combat commence lorsque Guts est repéré par les Chevaliers de
+              la Sainte Chaîne de Fer. Farnese ordonne son arrestation, mais
+              Guts, refusant de se rendre, engage le combat. Guts affronte
+              d'abord les soldats ordinaires de la troupe, les éliminant
+              rapidement grâce à sa force brute et à la puissance de sa
+              Dragonslayer. Farnese, bien que déterminée, est dépassée par la
+              brutalité et l'expérience de Guts. Serpico intervient pour
+              protéger Farnese, utilisant sa rapidité et son agilité pour tenter
+              de prendre Guts par surprise. Cependant, Guts parvient à anticiper
+              ses mouvements et le repousse avec force. Le combat entre Guts et
+              Serpico est marqué par des échanges rapides et techniques, Serpico
+              utilisant le terrain à son avantage pour essayer de déséquilibrer
+              Guts. Azan entre alors en scène, utilisant sa massue pour
+              affronter Guts dans un combat intense. La force brute d'Azan et
+              son expérience rendent le duel difficile pour Guts, mais il
+              parvient à trouver une ouverture et à le désarmer temporairement.
+              Azan montre une grande résilience, continuant à se battre malgré
+              les coups puissants de Guts. Le tournant du combat survient
+              lorsque Guts parvient à désarmer et à maîtriser Farnese, montrant
+              qu'il ne souhaite pas la tuer mais simplement se défendre. Ce
+              moment de vulnérabilité pour Farnese est crucial, car il la
+              confronte à la réalité de la force de Guts et la complexité de ses
+              motivations.
+            </p>
+            <br />
+
+            <p>
+              <strong>Conséquences du Duel : </strong>
+              Le combat se termine avec Guts victorieux, mais il décide de ne
+              pas tuer ses adversaires, réalisant qu'ils ne sont pas ses
+              véritables ennemis mais plutôt des humains pris dans des conflits
+              plus grands. Cet affrontement marque le début d'une relation
+              complexe entre Guts et Farnese, qui commence à remettre en
+              question ses croyances et son rôle en tant qu'inquisitrice. Cette
+              bataille montre non seulement la force et la détermination de
+              Guts, mais aussi la profondeur des personnages de Farnese, Serpico
+              et Azan, qui deviendront plus tard des alliés importants dans sa
+              quête. Elle souligne également les tensions entre la quête
+              personnelle de Guts et les forces religieuses et politiques de son
+              monde.
+            </p>
+            <br />
+
+            <!-- La Nuit avec Farnese contre les Monstres  -->
+            <li class="mangatitle">
+              <h2 style="text-align: center">
+                La Nuit avec Farnese contre les Monstres
+              </h2>
+            </li>
+
+            <div>
+              <figure>
+                <img
+                  id="proto"
+                  src="/img/Demons/Chatiments/Nuit1.png"
+                  class="center hover"
+                  data-toggle="modal"
+                  data-target="#berserker-img"
+                />
+                <!-- Modal -->
+                <div
+                  class="modal fade"
+                  id="berserker-img"
+                  tabindex="-1"
+                  role="dialog"
+                  aria-labelledby="berserker-img"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button
+                          type="button"
+                          class="close"
+                          data-dismiss="modal"
+                          aria-label="Close"
+                        >
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <img
+                          src="/img/Demons/Chatiments/Nuit1.png"
+                          class="modal-image img-fluid"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Modal -->
+              </figure>
+            </div>
+            <p>
+              <strong> Description :</strong>
+              Cette scène se déroule lorsque Guts et Farnese, qui ont été
+              séparés du reste du groupe, doivent affronter une nuit terrifiante
+              pleine de créatures démoniaques. Farnese, confrontée pour la
+              première fois à l'horreur des monstres surnaturels, subit
+              également une possession démoniaque.
+            </p>
+            <br />
+            <p>
+              <strong> Description du Combat:</strong>
+              La nuit commence avec Guts et Farnese se réfugiant dans une forêt
+              sombre après avoir été séparés du reste du groupe. Les monstres
+              apparaissent, attirés par la Marque du Sacrifice de Guts. Farnese,
+              peu habituée à de telles horreurs, est rapidement submergée par la
+              terreur. Guts combat vaillamment les créatures avec sa
+              Dragonslayer, tranchant à travers les monstres avec sa force
+              brute. Cependant, les monstres sont nombreux et attaquent sans
+              relâche. Farnese, paralysée par la peur, devient une cible facile.
+              À un moment critique, une créature démoniaque prend possession du
+              cheval de Farnese, transformant l'animal en un monstre grotesque.
+              Le cheval possédé attaque Farnese, ajoutant une dimension de
+              terreur sexuelle et psychologique à la scène. Farnese est
+              immobilisée par la peur et l'horreur de la situation. Guts, voyant
+              Farnese en danger, redouble d'efforts pour la protéger. Il
+              parvient à tuer le cheval possédé, sauvant Farnese d'une situation
+              cauchemardesque. Cependant, Farnese est ensuite possédée par des
+              esprits démoniaques qui exploitent ses peurs et ses insécurités.
+              Dans un acte de désespoir et de protection, Guts utilise ses
+              compétences de combattant pour exorciser les esprits de Farnese,
+              combattant les démons à la fois physiquement et psychologiquement.
+              Grâce à sa force et à sa détermination, il parvient à libérer
+              Farnese de la possession.
+            </p>
+            <br />
+
+            <p>
+              <strong> Description du Combat:</strong>
+              Cette nuit traumatisante a un impact profond sur Farnese. Elle
+              commence à remettre en question ses croyances et son rôle en tant
+              qu'inquisitrice, réalisant l'ampleur de la cruauté et de l'horreur
+              du monde. Pour Guts, cette nuit est une autre preuve de sa
+              capacité à protéger ceux qui l'entourent, malgré les forces
+              démoniaques qui le pourchassent. Le lien entre Guts et Farnese se
+              renforce, Farnese développant une profonde admiration et une
+              certaine dépendance envers Guts. Elle commence également à voir le
+              monde sous un nouveau jour, ce qui la pousse à changer et à
+              évoluer au fil de l'histoire.
+            </p>
+            <br />
+
+            <div>
+              <figure>
+                <img
+                  id="proto"
+                  src="/img/Demons/Chatiments/Nuit2.png"
+                  class="center hover"
+                  data-toggle="modal"
+                  data-target="#berserker-img"
+                />
+                <!-- Modal -->
+                <div
+                  class="modal fade"
+                  id="berserker-img"
+                  tabindex="-1"
+                  role="dialog"
+                  aria-labelledby="berserker-img"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button
+                          type="button"
+                          class="close"
+                          data-dismiss="modal"
+                          aria-label="Close"
+                        >
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <img
+                          src="/img/Demons/Chatiments/Nuit2.png"
+                          class="modal-image img-fluid"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Modal -->
+              </figure>
+            </div>
+
+            <h2 id="Naissance" style="text-align: center">La Naissance</h2>
+            <h3 style="text-align: center">Tomes 17 à 21</h3>
+
+            <!-- Guts contre Grand Bouc  -->
+            <li class="mangatitle">
+              <h2 style="text-align: center">Guts contre Grand Bouc</h2>
+            </li>
+
+            <div>
+              <figure>
+                <img
+                  id="proto"
+                  src="/img/Demons/Chatiments/Bouc.png"
+                  class="center hover"
+                  data-toggle="modal"
+                  data-target="#berserker-img"
+                />
+                <!-- Modal -->
+                <div
+                  class="modal fade"
+                  id="berserker-img"
+                  tabindex="-1"
+                  role="dialog"
+                  aria-labelledby="berserker-img"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button
+                          type="button"
+                          class="close"
+                          data-dismiss="modal"
+                          aria-label="Close"
+                        >
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <img
+                          src="/img/Demons/Chatiments/Bouc.png"
+                          class="modal-image img-fluid"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Modal -->
+              </figure>
+            </div>
+            <p>
+              <strong> Description :</strong>
+              Le combat de Guts contre la Grande Chèvre est une confrontation
+              intense qui se déroule pendant l'arc de la Tour de la Conviction.
+              La Grande Chèvre est un chef culte démoniaque possédant des traits
+              caprins, qui dirige un groupe de fanatiques dans la Tour de la
+              Conviction. Ce combat souligne la brutalité et la détermination de
+              Guts à protéger ses compagnons et à éliminer les forces du mal.
+            </p>
+            <br />
+            <p>
+              <strong> Description du Duel:</strong>
+              Le combat commence lorsque Guts infiltre la Tour de la Conviction
+              pour affronter la menace démoniaque qui y règne. La Grande Chèvre,
+              entourée de ses adeptes fanatiques, se révèle être un ennemi
+              redoutable. Guts doit se frayer un chemin à travers les cultistes
+              pour atteindre leur chef. La Grande Chèvre attaque Guts avec une
+              force brute et une agilité surprenante, utilisant ses cornes et
+              ses griffes pour tenter de submerger Guts. Les adeptes de la
+              Grande Chèvre compliquent le combat en attaquant Guts en masse,
+              mais Guts utilise sa Dragonslayer pour les repousser et les
+              éliminer rapidement. Le combat devient de plus en plus intense à
+              mesure que Guts et la Grande Chèvre échangent des coups violents.
+              Guts utilise sa force surhumaine et son expérience pour parer et
+              esquiver les attaques de la Grande Chèvre, cherchant des
+              ouvertures pour porter des coups décisifs. À un moment critique,
+              la Grande Chèvre tente de submerger Guts en utilisant ses adeptes
+              comme boucliers humains, mais Guts, déterminé à vaincre, parvient
+              à les éviter et à concentrer ses attaques sur la Grande Chèvre
+              elle-même. Malgré les capacités de régénération de la Grande
+              Chèvre, Guts continue à porter des coups puissants, affaiblissant
+              progressivement son ennemi. Le tournant du combat survient lorsque
+              Guts parvient à désarmer la Grande Chèvre et à l'immobiliser
+              temporairement. Utilisant toute sa force, Guts porte un coup final
+              avec sa Dragonslayer, décapitant la Grande Chèvre et mettant fin à
+              la menace démoniaque.
+            </p>
+            <br />
+
+            <p>
+              <strong>Conséquences du Duel : </strong>
+              La mort de la Grande Chèvre permet à Guts de libérer les
+              prisonniers de la Tour de la Conviction et de mettre un terme au
+              culte démoniaque qui y sévissait. Ce combat renforce la
+              détermination de Guts à lutter contre les forces du mal et à
+              protéger ceux qui sont vulnérables face aux horreurs démoniaques.
+              Le combat contre la Grande Chèvre montre également la brutalité et
+              la résilience de Guts, ainsi que sa capacité à surmonter des
+              adversaires puissants et surnaturels. La victoire de Guts dans ce
+              combat est une autre étape importante dans sa quête de vengeance
+              et de protection contre les forces du mal.
+            </p>
+            <br />
+
+            <!-- Guts contre les disciples de Mozgus  -->
+            <li class="mangatitle">
+              <h2 style="text-align: center">
+                Guts contre les disciples de Mozgus
+              </h2>
+            </li>
+
+            <div>
+              <figure>
+                <img
+                  id="proto"
+                  src="/img/Demons/Chatiments/Angelique.png"
+                  class="center hover"
+                  data-toggle="modal"
+                  data-target="#berserker-img"
+                />
+                <!-- Modal -->
+                <div
+                  class="modal fade"
+                  id="berserker-img"
+                  tabindex="-1"
+                  role="dialog"
+                  aria-labelledby="berserker-img"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button
+                          type="button"
+                          class="close"
+                          data-dismiss="modal"
+                          aria-label="Close"
+                        >
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <img
+                          src="/img/Demons/Chatiments/Angelique.png"
+                          class="modal-image img-fluid"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Modal -->
+              </figure>
+            </div>
+            <p>
+              <strong> Description :</strong>
+              Le combat de Guts contre les disciples pseudo-apôtres de Mozgus
+              est un affrontement intense qui se déroule pendant l'arc de la
+              Tour de la Conviction. Mozgus, un fanatique religieux, a sous ses
+              ordres plusieurs disciples monstrueux, chacun ayant subi des
+              transformations grotesques qui les rendent extrêmement dangereux.
+              Ce combat met en lumière la détermination et la force de Guts face
+              à des ennemis puissants et terrifiants.
+            </p>
+            <br />
+            <p>
+              <strong> Description du Duel:</strong>
+              Le combat commence lorsque Guts infiltre la Tour de la Conviction
+              pour affronter <strong>Mozgus</strong> et ses disciples. Les
+              disciples pseudo-apôtres attaquent Guts simultanément, chacun
+              utilisant ses capacités uniques pour tenter de submerger Guts.
+              <strong>L'Oiseau</strong>attaque en piqué depuis les airs, ses
+              griffes et son bec cherchant à déchirer Guts. Guts, utilisant sa
+              Dragonslayer, parvient à parer et à esquiver les attaques
+              aériennes, attendant une ouverture pour porter un coup décisif. Le
+              <strong>Visage d'Ange</strong> utilise ses chaînes et ses crochets
+              pour essayer d'attraper et de mutiler Guts. Le combat est brutal
+              et rapproché, mais Guts utilise sa force brute pour briser les
+              chaînes et contre-attaquer, infligeant des blessures graves à son
+              adversaire.
+            </p>
+            <p>
+              La <strong>Tête de Bulle</strong> attaque en projetant des jets
+              d'acide, obligeant Guts à rester en mouvement pour éviter le
+              liquide corrosif. Guts utilise sa Dragonslayer pour créer une
+              ouverture et parvient à infliger des coups puissants, perçant la
+              peau épaisse de son ennemi. Le <strong> Diablotin </strong>utilise
+              sa petite taille et sa rapidité pour harceler Guts avec des
+              attaques surprises. Cependant, Guts anticipe ses mouvements et
+              parvient à le coincer, utilisant sa force brute pour neutraliser
+              le petit mais dangereux adversaire.
+            </p>
+            <br />
+
+            <p>
+              <strong>Conséquences du Duel : </strong>
+              Grâce à sa force, son habileté et sa détermination, Guts parvient
+              à vaincre les disciples pseudo-apôtres de Mozgus, bien que le
+              combat soit éprouvant et intense. Ces victoires permettent à Guts
+              de continuer sa progression vers Mozgus, mettant en lumière sa
+              capacité à surmonter des adversaires puissants et variés. Le
+              combat contre les disciples de Mozgus renforce la réputation de
+              Guts en tant que guerrier implacable et montre sa capacité à
+              protéger ses compagnons des horreurs démoniaques. C'est une étape
+              importante dans son voyage pour combattre les forces du mal et
+              poursuivre sa quête de vengeance.
+            </p>
+            <br />
+
+            <!-- Guts contre Mozgus  -->
+            <li class="mangatitle">
+              <h2 style="text-align: center">Guts contre Mozgus</h2>
+            </li>
+
+            <div>
+              <figure>
+                <img
+                  id="proto"
+                  src="/img/Demons/Chatiments/Mozgus.png"
+                  class="center hover"
+                  data-toggle="modal"
+                  data-target="#berserker-img"
+                />
+                <!-- Modal -->
+                <div
+                  class="modal fade"
+                  id="berserker-img"
+                  tabindex="-1"
+                  role="dialog"
+                  aria-labelledby="berserker-img"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button
+                          type="button"
+                          class="close"
+                          data-dismiss="modal"
+                          aria-label="Close"
+                        >
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <img
+                          src="/img/Demons/Chatiments/Mozgus.png"
+                          class="modal-image img-fluid"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Modal -->
+              </figure>
+            </div>
+            <p>
+              <strong> Description :</strong>
+              Le combat entre Guts et Mozgus est une confrontation intense et
+              cruciale dans l'arc de la Tour de la Conviction. Mozgus est un
+              inquisiteur fanatique et impitoyable, dont la dévotion à la foi
+              religieuse le conduit à des actes de cruauté extrême. Transformé
+              en pseudo-apôtre, Mozgus devient une menace encore plus
+              redoutable, amplifiant ses pouvoirs physiques et son fanatisme.
+            </p>
+            <br />
+            <p>
+              <strong> Description du Combat :</strong>
+              Le combat commence lorsque Guts atteint la salle où Mozgus
+              effectue ses jugements cruels. Mozgus, dans sa forme humaine,
+              accueille Guts avec un discours fanatique sur la purification des
+              péchés. Le conflit éclate rapidement lorsque Mozgus se transforme
+              en sa forme démoniaque ailée, devenant une créature imposante et
+              redoutable. Mozgus attaque Guts avec une force brute, utilisant
+              ses ailes et ses poings pour tenter de l'écraser. Guts esquive et
+              pare les attaques, cherchant des ouvertures pour frapper avec sa
+              Dragonslayer. La peau de Mozgus, dure comme de la pierre, rend
+              difficile d'infliger des dégâts significatifs. Mozgus utilise
+              également ses flammes pour essayer de brûler Guts, ajoutant une
+              dimension supplémentaire au combat. Guts doit constamment se
+              déplacer pour éviter les attaques enflammées tout en cherchant à
+              atteindre les points faibles de Mozgus. Le combat devient de plus
+              en plus intense, chaque coup porté par Guts étant repoussé par la
+              résistance exceptionnelle de Mozgus. Cependant, Guts ne se laisse
+              pas décourager et continue à attaquer avec une détermination
+              féroce. Utilisant sa force surhumaine et sa maîtrise de l'épée,
+              Guts parvient à porter plusieurs coups puissants qui finissent par
+              fissurer la carapace de Mozgus. À un moment critique, Mozgus tente
+              de submerger Guts avec une attaque enflammée massive. Guts,
+              utilisant toute sa force et son agilité, parvient à esquiver
+              l'attaque et à se rapprocher suffisamment pour porter un coup
+              décisif. Avec un cri de rage, Guts enfonce sa Dragonslayer dans le
+              corps de Mozgus, brisant sa carapace et infligeant une blessure
+              mortelle.
+            </p>
+            <br />
+
+            <p>
+              <strong>Conséquences du Duel : </strong>
+              La défaite de Mozgus marque la fin de son règne de terreur à la
+              Tour de la Conviction. Sa mort permet à Guts et à ses compagnons
+              de libérer les prisonniers et de mettre un terme aux cruautés
+              perpétrées sous son commandement. Ce combat renforce la réputation
+              de Guts en tant que guerrier implacable et protecteur de ceux qui
+              sont opprimés par les forces du mal. Le combat contre Mozgus
+              montre également la capacité de Guts à surmonter des adversaires
+              puissants et fanatiques, illustrant sa résilience et sa
+              détermination à lutter contre l'injustice, qu'elle soit humaine ou
+              démoniaque. Cette victoire est une étape importante dans son
+              voyage pour combattre les forces du mal et poursuivre sa quête de
+              vengeance.
+            </p>
+            <br />
+          </ul>
+        </div>
+      </div>
+    </main>
+  </body>
+
+  <!-- Custom JavaScript -->
+  <script
+    src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"
+  ></script>
+</html>
