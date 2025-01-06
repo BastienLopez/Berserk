@@ -13,3 +13,7 @@ Le projet comprend une carte interactive et une chronologie des événements maj
 1. **Données et Contenu** : Lieux, événements et personnages clés avec leurs rôles dans l'histoire.
 2. **Interface Utilisateur** : Carte et chronologie interactives pour naviguer facilement dans l'univers de "Berserk".
 3. **Fonctionnalités Techniques** : Affichage dynamique des informations selon la sélection de l'utilisateur.
+
+### Lancer le projet
+
+python -m http.server 8000
