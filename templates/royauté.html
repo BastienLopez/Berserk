@@ -6,15 +6,26 @@
       function loadFile(filename, elementId) {
         fetch(filename)
           .then((response) => response.text())
-          .then(
-            (text) => (document.getElementById(elementId).innerHTML = text)
-          );
+          .then((text) => {
+            try {
+              if (elementId === "head-content") {
+                document.head.insertAdjacentHTML("beforeend", text);
+              } else {
+                const el = document.getElementById(elementId);
+                if (el) el.innerHTML = text;
+                else console.warn("loadFile: element not found", elementId);
+              }
+            } catch (e) {
+              console.error("loadFile error", e);
+            }
+          })
+          .catch((err) => console.error("fetch failed", err));
       }
 
       document.addEventListener("DOMContentLoaded", function () {
-        loadFile("/templates/head/head.html", "head-content");
-        loadFile("/templates/header.html", "header-content");
-        loadFile("/templates/footer.html", "footer-content");
+        loadFile("/Berserk/templates/head/head.html", "head-content");
+        loadFile("/Berserk/templates/header.html", "header-content");
+        loadFile("/Berserk/templates/footer.html", "footer-content");
       });
     </script>
   </head>
@@ -513,6 +524,6 @@
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"
   ></script>
-  <script src="/js/favicon.js"></script>
-  <script src="/js/image-modal.js"></script>
+  <script src="/Berserk/js/favicon.js"></script>
+  <script src="/Berserk/js/image-modal.js"></script>
 </html>
