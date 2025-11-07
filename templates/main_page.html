@@ -122,6 +122,7 @@
       document.addEventListener("DOMContentLoaded", function () {
         loadFile("/templates/head/head-main.html", "head-content");
         loadFile("/templates/header.html", "header-content");
+        loadFile("/templates/footer.html", "footer-content");
 
         const src = document.getElementById("md-source");
         const target = document.getElementById("md-content");
@@ -776,8 +777,9 @@ Guts contre Griffith[20]
 </textarea>
       
     </main>
+    <div id="footer-content"></div>
 
-    <footer style="text-align:center;padding:1rem;background:#111;color:#eee;margin-top:2rem">
+    <footer style="display:none;text-align:center;padding:1rem;background:#111;color:#eee;margin-top:2rem">
       <div>
         <a href="https://github.com/BastienLopez/Berserk" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:none">
           <!-- Inline GitHub mark SVG -->
@@ -805,5 +807,7 @@ Guts contre Griffith[20]
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
+    <script src="/js/favicon.js"></script>
+    <script src="/js/image-modal.js"></script>
   </body>
 </html>

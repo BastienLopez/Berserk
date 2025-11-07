@@ -16,4 +16,26 @@ Le projet comprend une carte interactive et une chronologie des événements maj
 
 ### Lancer le projet
 
+Localement (rapide) :
+
+```powershell
+# Depuis la racine du projet
 python -m http.server 8000
+# ou si 'python' n'est pas disponible mais que le lanceur l'est :
+py -3 -m http.server 8000
+```
+
+Prévisualiser sans Python :
+
+- Utiliser l'extension VS Code "Live Server" et ouvrir `templates/Kentaro_Miura.html`.
+- Installer Node et `http-server` : `npm i -g http-server` puis `http-server -p 8000`.
+
+Déployer sur GitHub Pages
+
+1. Dans GitHub, ouvre la page du dépôt -> Settings -> Pages.
+2. Sous "Source", choisis "Branch: main" et "Folder: / (root)" puis Enregistrer.
+3. Le site sera disponible à l'URL indiquée (quelques minutes pour la première publication).
+
+Remarques :
+- J'ai ajouté un fichier `index.html` à la racine qui redirige vers `templates/Kentaro_Miura.html` — cela permet à GitHub Pages (source = root) d'afficher ta page principale sans déplacer les fichiers.
+- Si tu préfères servir directement depuis un dossier `docs/` ou une branche `gh-pages`, on peut aussi copier les fichiers nécessaires dans `docs/` et configurer Pages sur `docs/`.

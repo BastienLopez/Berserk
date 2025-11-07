@@ -12,8 +12,9 @@
       }
 
       document.addEventListener("DOMContentLoaded", function () {
-        loadFile("head/head.html", "head-content");
-        loadFile("header.html", "header-content");
+        loadFile("/templates/head/head.html", "head-content");
+        loadFile("/templates/header.html", "header-content");
+        loadFile("/templates/footer.html", "footer-content");
       });
     </script>
   </head>
@@ -68,7 +69,7 @@
               <!-- Modal -->
             </figure>
           </div>
-          <h2 style="text-align: center">Forme angelique</h2>
+          <h2 class="mangatitle symbol" style="text-align: center">Forme angelique</h2>
           <div>
             <figure>
               <img
@@ -118,7 +119,7 @@
           <ul>
             <!-- Mozgus  -->
             <li class="mangatitle">
-              <h2 style="text-align: center">Mozgus</h2>
+              <h2 class="mangatitle symbol" style="text-align: center">Mozgus</h2>
             </li>
 
             <div>
@@ -179,7 +180,7 @@
 
               <!-- Jérôme  -->
               <li class="mangatitle">
-                <h2 style="text-align: center">Le corbeau</h2>
+                <h2 class="mangatitle symbol" style="text-align: center">Le corbeau</h2>
               </li>
             </p>
 
@@ -240,7 +241,7 @@
 
             <!-- Vladimir  -->
             <li class="mangatitle">
-              <h2 style="text-align: center">La tête de bulle</h2>
+              <h2 class="mangatitle symbol" style="text-align: center">La tête de bulle</h2>
             </li>
 
             <div>
@@ -303,7 +304,7 @@
 
             <!-- Hermann  -->
             <li class="mangatitle">
-              <h2 style="text-align: center">Le diablotin</h2>
+              <h2 class="mangatitle symbol" style="text-align: center">Le diablotin</h2>
             </li>
 
             <div>
@@ -365,7 +366,7 @@
 
             <!-- Bishop Mozgus -->
             <li class="mangatitle">
-              <h2 style="text-align: center">Les jumeaux</h2>
+              <h2 class="mangatitle symbol" style="text-align: center">Les jumeaux</h2>
             </li>
 
             <div>
@@ -428,7 +429,7 @@
 
             <!-- Simeon   -->
             <li class="mangatitle">
-              <h2 style="text-align: center">Le visage de l’ange</h2>
+              <h2 class="mangatitle symbol" style="text-align: center">Le visage de l’ange</h2>
             </li>
 
             <div>
@@ -490,6 +491,7 @@
         </div>
       </div>
     </main>
+    <div id="footer-content"></div>
   </body>
 
   <!-- Custom JavaScript -->
@@ -508,4 +510,6 @@
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"
   ></script>
+  <script src="/js/favicon.js"></script>
+  <script src="/js/image-modal.js"></script>
 </html>

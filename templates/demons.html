@@ -12,8 +12,9 @@
       }
 
       document.addEventListener("DOMContentLoaded", function () {
-        loadFile("head/head.html", "head-content");
-        loadFile("header.html", "header-content");
+        loadFile("/templates/head/head.html", "head-content");
+        loadFile("/templates/header.html", "header-content");
+        loadFile("/templates/footer.html", "footer-content");
       });
     </script>
   </head>
@@ -75,7 +76,7 @@
           <ul>
             <!-- Zodd l'Immortel  -->
             <li class="mangatitle">
-              <h2 style="text-align: center">Zodd l'Immortel</h2>
+              <h2 class="mangatitle symbol" style="text-align: center">Zodd l'Immortel</h2>
             </li>
 
             <div>
@@ -135,7 +136,7 @@
 
             <!-- Grunbeld  -->
             <li class="mangatitle">
-              <h2 style="text-align: center">Grunbeld</h2>
+              <h2 class="mangatitle symbol" style="text-align: center">Grunbeld</h2>
             </li>
 
             <div>
@@ -196,7 +197,7 @@
 
             <!-- Rosine  -->
             <li class="mangatitle">
-              <h2 style="text-align: center">Rosine</h2>
+              <h2 class="mangatitle symbol" style="text-align: center">Rosine</h2>
             </li>
 
             <div>
@@ -257,7 +258,7 @@
 
             <!-- Wyald  -->
             <li class="mangatitle">
-              <h2 style="text-align: center">Wyald</h2>
+              <h2 class="mangatitle symbol" style="text-align: center">Wyald</h2>
             </li>
 
             <div>
@@ -318,7 +319,7 @@
 
             <!--  Le Comte -->
             <li class="mangatitle">
-              <h2 style="text-align: center">Le Comte</h2>
+              <h2 class="mangatitle symbol" style="text-align: center">Le Comte</h2>
             </li>
 
             <div>
@@ -379,7 +380,7 @@
 
             <!-- God Hand  -->
             <li class="mangatitle">
-              <h2 style="text-align: center">God Hand</h2>
+              <h2 class="mangatitle symbol" style="text-align: center">God Hand</h2>
             </li>
 
             <div>
@@ -428,7 +429,7 @@
 
             <!-- le Baron Slugg  -->
             <li class="mangatitle">
-              <h2 style="text-align: center">Le Baron Slugg</h2>
+              <h2 class="mangatitle symbol" style="text-align: center">Le Baron Slugg</h2>
             </li>
 
             <div>
@@ -511,6 +512,7 @@
         </div>
       </div>
     </main>
+    <div id="footer-content"></div>
   </body>
 
   <!-- Custom JavaScript -->
@@ -529,4 +531,6 @@
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"
   ></script>
+  <script src="/js/favicon.js"></script>
+  <script src="/js/image-modal.js"></script>
 </html>

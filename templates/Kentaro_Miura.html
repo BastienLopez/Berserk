@@ -12,8 +12,9 @@
       }
 
       document.addEventListener("DOMContentLoaded", function () {
-        loadFile("head/head.html", "head-content");
-        loadFile("header.html", "header-content");
+        loadFile("/templates/head/head.html", "head-content");
+        loadFile("/templates/header.html", "header-content");
+        loadFile("/templates/footer.html", "footer-content");
       });
     </script>
   </head>
@@ -309,8 +310,8 @@
             <br />
             <ul>
               <li class="mangatitle">
-                <h2 style="text-align: center">Gigantomackhia</h2>
-              </li>
+              <h2 class="mangatitle symbol" style="text-align: center">Gigantomackhia</h2>
+            </li>
               <p>
                 Une mini-série de 6 chapitres sur une guerre entre l'armée de
                 Zeus et l'armée géante d'Alcyoneus - situé 100 millions d'années
@@ -360,8 +361,8 @@
               </div>
               <br />
               <li class="mangatitle">
-                <h2 style="text-align: center">Berserk:</h2>
-                <h2 style="text-align: center">Le Prototype</h2>
+                <h2 class="mangatitle symbol" style="text-align: center">Berserk:</h2>
+                <h2 class="mangatitle symbol" style="text-align: center">Le Prototype</h2>
               </li>
               <p>
                 C'est le précurseur de Berserk, mais ne fait pas partie de
@@ -412,7 +413,7 @@
               </div>
               <br />
               <li class="mangatitle">
-                <h2 style="text-align: center">Noa</h2>
+                <h2 class="mangatitle symbol" style="text-align: center">Noa</h2>
               </li>
               <p>
                 Ce manga parle de survie dans une ère post-apocalyptique avec
@@ -463,7 +464,7 @@
               </div>
               <br />
               <li class="mangatitle">
-                <h2 style="text-align: center">Futatabi</h2>
+                <h2 class="mangatitle symbol" style="text-align: center">Futatabi</h2>
               </li>
               <p>
                 Un apprenti mécanicien vivant sous terre rencontre un intrus
@@ -515,7 +516,7 @@
               </div>
               <br />
               <li class="mangatitle">
-                <h2 style="text-align: center">Japan</h2>
+                <h2 class="mangatitle symbol" style="text-align: center">Japan</h2>
               </li>
               <p>
                 Il s'agit d'un manga écrit par Buronson et illustré par Kentaro
@@ -571,7 +572,7 @@
               </div>
               <br />
               <li class="mangatitle">
-                <h2 style="text-align: center">Roi des loups</h2>
+                <h2 class="mangatitle symbol" style="text-align: center">Roi des loups</h2>
               </li>
               <p>
                 Un historien nommé Iba disparaît seul durant son voyage pour
@@ -625,7 +626,7 @@
               </div>
               <br />
               <li class="mangatitle">
-                <h2 style="text-align: center">Duranki</h2>
+                <h2 class="mangatitle symbol" style="text-align: center">Duranki</h2>
               </li>
               <p>
                 Basé sur les mythes grecs, mésopotamiens et sumériens, Duranki
@@ -678,8 +679,8 @@
               </div>
               <br />
               <li class="mangatitle">
-                <h2 style="text-align: center">Berserk</h2>
-              </li>
+              <h2 class="mangatitle symbol" style="text-align: center">Berserk:</h2>
+            </li>
               <p>
                 Premierement, c'est le meilleur manga de tous les temps (sans
                 prétention). C'est une histoire d'une extrêmement violence se
@@ -738,6 +739,7 @@
         </section>
       </div>
     </main>
+    <div id="footer-content"></div>
   </body>
 
   <!-- Custom JavaScript -->
@@ -757,4 +759,6 @@
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"
   ></script>
+  <script src="/js/favicon.js"></script>
+  <script src="/js/image-modal.js"></script>
 </html>

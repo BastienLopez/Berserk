@@ -14,8 +14,9 @@
       }
 
       document.addEventListener("DOMContentLoaded", function () {
-        loadFile("/templates/head/head-content.html", "head-content");
+        loadFile("/templates/head/head.html", "head-content");
         loadFile("/templates/header.html", "header-content");
+        loadFile("/templates/footer.html", "footer-content");
       });
     </script>
   </head>
@@ -78,7 +79,7 @@
           <ul>
             <!-- Vlad le Baron Serpent  -->
             <li class="mangatitle">
-              <h2 style="text-align: center">Vlad le Baron Serpent</h2>
+              <h2 class="mangatitle symbol" style="text-align: center">Vlad le Baron Serpent</h2>
             </li>
 
             <div>
@@ -137,7 +138,7 @@
 
             <!-- Zondark   -->
             <li class="mangatitle">
-              <h2 style="text-align: center">Zondark</h2>
+              <h2 class="mangatitle symbol" style="text-align: center">Zondark</h2>
             </li>
 
             <div>
@@ -208,7 +209,7 @@
 
             <!-- Le Comte -->
             <li class="mangatitle">
-              <h2 style="text-align: center">Le Comte</h2>
+              <h2 class="mangatitle symbol" style="text-align: center">Le Comte</h2>
             </li>
 
             <div>
@@ -293,6 +294,7 @@
         </div>
       </div>
     </main>
+    <div id="footer-content"></div>
   </body>
 
   <!-- Custom JavaScript -->
@@ -311,4 +313,6 @@
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"
   ></script>
+  <script src="/js/favicon.js"></script>
+  <script src="/js/image-modal.js"></script>
 </html>

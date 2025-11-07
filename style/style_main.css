@@ -1,7 +1,8 @@
 html {
   font-size: 16px;
-  width: 65%;
+  max-width: 1200px;
   margin: 0 auto;
+  padding: 0 16px;
   scroll-behavior: smooth;
 }
 
@@ -33,6 +34,7 @@ html {
   display: flex;
   justify-content: center; /* Centrer les éléments horizontalement */
   align-items: center; /* Centrer les éléments verticalement */
+  position: relative; /* allow absolute centering for mobile brand */
 }
 
 .navbar-nav {
@@ -62,6 +64,25 @@ html {
 .custom-toggler.navbar-toggler {
   border-color: rgb(255, 69, 69);
 }
+/* Ensure toggler visible with custom theme */
+.navbar-custom .navbar-toggler { border-color: rgba(255,255,255,.35); }
+.navbar-custom .navbar-toggler-icon { filter: invert(100%); }
+
+/* Mobile centered brand */
+.mobile-brand { position: absolute; left: 50%; transform: translateX(-50%); }
+@media (min-width: 992px) { /* lg and up: hide mobile brand */
+  .mobile-brand { display: none !important; }
+}
+/* Hide mobile brand when menu is open */
+.navbar-custom.is-open .mobile-brand { display: none !important; }
+/* Also hide when toggler expanded (no JS dependency) */
+.navbar-toggler[aria-expanded="true"] ~ .mobile-brand { display: none !important; }
+
+/* Logo center inside collapsed menu (mobile): hidden by default, shown when menu open; always visible on desktop */
+.logo-center { display: none; }
+@media (min-width: 992px) { .logo-center { display: block; } }
+.navbar-collapse.show .logo-center { display: block !important; }
+.logo-center img { display:block; margin:0 auto; }
 
 /* -------- Navigation Menu End -------- */
 
@@ -94,6 +115,19 @@ h3 {
 }
 
 /* Titles & Subtitles End */
+
+/* Footer */
+.site-footer {
+  text-align: center;
+  padding: 1rem 0;
+  background: #111;
+  color: #eee;
+  margin-top: 2rem;
+  border-top: 1px solid var(--border);
+}
+.site-footer a { color: inherit; text-decoration: none; }
+.site-footer a:hover { color: var(--link-glow); }
+/* Footer end */
 
 /* Visual Foundation */
 #body {
@@ -131,9 +165,7 @@ hr {
 }
 
 @media (max-width: 768px) {
-  html {
-    width: 500px;
-  }
+  html { padding: 0 12px; }
 }
 
 /* Responsiveness end */
@@ -197,6 +229,36 @@ hr {
 
 #image3:hover {
   opacity: 0.7;
+}
+
+/* Markdown content container */
+#md-content { line-height: 1.7; }
+#md-content p { margin: 0.75rem 0; text-align: justify; }
+#md-content h1, #md-content h2, #md-content h3 { margin-top: 1.5rem; }
+#md-content a { color: var(--primary-color); text-decoration: underline; }
+#md-content a:hover { color: var(--link-glow); }
+#md-content ul { padding-left: 1.25rem; }
+#md-content img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
+  border-style: solid;
+  border-width: 1px;
+  border-color: var(--border);
+}
+
+#md-content pre {
+  background: var(--background-two);
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  overflow: auto;
+}
+
+#md-content blockquote {
+  border-left: 4px solid var(--border);
+  padding-left: 1rem;
+  color: #cfcfd3;
 }
 
 .modal-image {
@@ -306,7 +368,7 @@ p {
 }
 
 .symbol {
-  background: url("../img/Kentaro/Symbol.png") no-repeat left top;
+  background: url("/img/Kentaro/Symbol.png") no-repeat left top;
 }
 
 /*ul {
@@ -317,7 +379,7 @@ p {
   padding-right: 40px;
   padding-left: 40px;
   list-style: none;
-  background-image: url("../img/Kentaro/Symbol.png");
+  background-image: url("/img/Kentaro/Symbol.png");
   background-repeat: no-repeat;
   background-position: left center;
   background-size: 25px;
@@ -327,6 +389,8 @@ p {
   font-size: 1.2rem;
   text-indent: 1em;
   color: indianred;
+  /* ensure space for the symbol */
+  padding-left: 40px;
 }
 
 .description {

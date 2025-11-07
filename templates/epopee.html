@@ -12,8 +12,9 @@
       }
 
       document.addEventListener("DOMContentLoaded", function () {
-        loadFile("head/head.html", "head-content");
-        loadFile("header.html", "header-content");
+        loadFile("/templates/head/head.html", "head-content");
+        loadFile("/templates/header.html", "header-content");
+        loadFile("/templates/footer.html", "footer-content");
       });
     </script>
   </head>
@@ -75,7 +76,7 @@
           <ul>
             <!-- Roi -->
             <li class="mangatitle">
-              <h2 style="text-align: center">Guts & Casca</h2>
+              <h2 class="mangatitle symbol" style="text-align: center">Guts & Casca</h2>
             </li>
 
             <div>
@@ -124,7 +125,7 @@
 
             <!-- Puck  -->
             <li class="mangatitle">
-              <h2 style="text-align: center">Puck</h2>
+              <h2 class="mangatitle symbol" style="text-align: center">Puck</h2>
             </li>
 
             <div>
@@ -181,16 +182,11 @@
               blessures mineures et utilise ses ailes pour voler. Sa petite
               taille et sa rapidité en font un excellent éclaireur.
             </p>
-            <p style="text-align: center">
-              <a href="Puck.html">
-                <strong>👉🏽😉👈🏽</strong>
-              </a>
-            </p>
             <br />
 
             <!-- Isidro  -->
             <li class="mangatitle">
-              <h2 style="text-align: center">Isidro</h2>
+              <h2 class="mangatitle symbol" style="text-align: center">Isidro</h2>
             </li>
 
             <div>
@@ -251,7 +247,7 @@
 
             <!-- Dame Farnese de Vandimion -->
             <li class="mangatitle">
-              <h2 style="text-align: center">Dame Farnese de Vandimion</h2>
+              <h2 class="mangatitle symbol" style="text-align: center">Dame Farnese de Vandimion</h2>
             </li>
 
             <div>
@@ -313,7 +309,7 @@
 
             <!-- Serpico -->
             <li class="mangatitle">
-              <h2 style="text-align: center">Serpico</h2>
+              <h2 class="mangatitle symbol" style="text-align: center">Serpico</h2>
             </li>
 
             <div>
@@ -375,7 +371,7 @@
 
             <!-- Schierke  -->
             <li class="mangatitle">
-              <h2 style="text-align: center">Schierke</h2>
+              <h2 class="mangatitle symbol" style="text-align: center">Schierke</h2>
             </li>
 
             <div>
@@ -438,7 +434,7 @@
 
             <!-- Ivalera   -->
             <li class="mangatitle">
-              <h2 style="text-align: center">Ivalera</h2>
+              <h2 class="mangatitle symbol" style="text-align: center">Ivalera</h2>
             </li>
 
             <div>
@@ -498,7 +494,7 @@
 
             <!-- Skull Knight   -->
             <li class="mangatitle">
-              <h2 style="text-align: center">Skull Knight</h2>
+              <h2 class="mangatitle symbol" style="text-align: center">Skull Knight</h2>
             </li>
 
             <div>
@@ -566,6 +562,7 @@
         </div>
       </div>
     </main>
+    <div id="footer-content"></div>
   </body>
 
   <!-- Custom JavaScript -->
@@ -584,4 +581,6 @@
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"
   ></script>
+  <script src="/js/favicon.js"></script>
+  <script src="/js/image-modal.js"></script>
 </html>

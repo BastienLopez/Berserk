@@ -12,8 +12,9 @@
       }
 
       document.addEventListener("DOMContentLoaded", function () {
-        loadFile("head/head-map.html", "head-content");
-        loadFile("header.html", "header-content");
+        loadFile("/templates/head/head-map.html", "head-content");
+        loadFile("/templates/header.html", "header-content");
+        loadFile("/templates/footer.html", "footer-content");
       });
     </script>
   </head>
@@ -33,7 +34,10 @@
         </div>
       </div>
     </main>
+    <div id="footer-content"></div>
   </body>
   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
   <script src="../js/map.js"></script>
+  <script src="/js/favicon.js"></script>
+  <script src="/js/image-modal.js"></script>
 </html>

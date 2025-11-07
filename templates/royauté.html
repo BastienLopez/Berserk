@@ -12,8 +12,9 @@
       }
 
       document.addEventListener("DOMContentLoaded", function () {
-        loadFile("head/head.html", "head-content");
-        loadFile("header.html", "header-content");
+        loadFile("/templates/head/head.html", "head-content");
+        loadFile("/templates/header.html", "header-content");
+        loadFile("/templates/footer.html", "footer-content");
       });
     </script>
   </head>
@@ -75,7 +76,7 @@
           <ul>
             <!-- Roi -->
             <li class="mangatitle">
-              <h2 style="text-align: center">Roi de Midland</h2>
+              <h2 class="mangatitle symbol" style="text-align: center">Roi de Midland</h2>
             </li>
 
             <div>
@@ -137,7 +138,7 @@
 
             <!-- Reine de Midland -->
             <li class="mangatitle">
-              <h2 style="text-align: center">Reine de Midland</h2>
+              <h2 class="mangatitle symbol" style="text-align: center">Reine de Midland</h2>
             </li>
 
             <div>
@@ -199,7 +200,7 @@
 
             <!-- Princesse Charlotte -->
             <li class="mangatitle">
-              <h2 style="text-align: center">Princesse Charlotte</h2>
+              <h2 class="mangatitle symbol" style="text-align: center">Princesse Charlotte</h2>
             </li>
 
             <div>
@@ -369,7 +370,7 @@
 
             <!-- Serpico -->
             <li class="mangatitle">
-              <h2 style="text-align: center">Serpico</h2>
+              <h2 class="mangatitle symbol" style="text-align: center">Serpico</h2>
             </li>
 
             <div>
@@ -432,7 +433,7 @@
 
             <!-- Azan  -->
             <li class="mangatitle">
-              <h2 style="text-align: center">Azan</h2>
+              <h2 class="mangatitle symbol" style="text-align: center">Azan</h2>
             </li>
 
             <div>
@@ -493,6 +494,7 @@
         </div>
       </div>
     </main>
+    <div id="footer-content"></div>
   </body>
 
   <!-- Custom JavaScript -->
@@ -511,4 +513,6 @@
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"
   ></script>
+  <script src="/js/favicon.js"></script>
+  <script src="/js/image-modal.js"></script>
 </html>

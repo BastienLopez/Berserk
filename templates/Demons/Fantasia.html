@@ -14,8 +14,10 @@
       }
 
       document.addEventListener("DOMContentLoaded", function () {
-        loadFile("../head/head.html", "head-content");
-        loadFile("../header.html", "header-content");
+        // use absolute paths so includes resolve correctly from any nested template
+        loadFile("/templates/head/head.html", "head-content");
+        loadFile("/templates/header.html", "header-content");
+        loadFile("/templates/footer.html", "footer-content");
       });
     </script>
   </head>
@@ -33,7 +35,7 @@
             <figure>
               <img
                 id="proto"
-                src="../img/Demons/Fantasia/1.png"
+                src="/img/Demons/Fantasia/1.jpg"
                 class="center hover"
                 data-toggle="modal"
                 data-target="#berserker-img"
@@ -59,12 +61,6 @@
                         <span aria-hidden="true">&times;</span>
                       </button>
                     </div>
-                    <div class="modal-body">
-                      <img
-                        src="../img/Demons/Fantasia/Demons.png"
-                        class="modal-image img-fluid"
-                      />
-                    </div>
                   </div>
                 </div>
               </div>
@@ -75,70 +71,79 @@
         <br />
 
         <div id="manga-list">
-          <ul>
-            <!-- Zodd l'Immortel  -->
-            <li class="mangatitle">
-              <h2 style="text-align: center">Zodd l'Immortel</h2>
-            </li>
+          <uL>
+            <!-- SECTION: Combats principaux -->
+            <section id="combats-principaux">
+              <h2 class="mangatitle symbol" style="text-align: center">Combats principaux</h2>
+              <p style="text-align: center">Résumé des affrontements majeurs de l'arc « Fantasia ».</p>
 
-            <div>
-              <figure>
-                <img
-                  id="proto"
-                  src="../img/Demons/Fantasia/Zodd.png"
-                  class="center hover"
-                  data-toggle="modal"
-                  data-target="#berserker-img"
-                />
-                <!-- Modal -->
-                <div
-                  class="modal fade"
-                  id="berserker-img"
-                  tabindex="-1"
-                  role="dialog"
-                  aria-labelledby="berserker-img"
-                  aria-hidden="true"
-                >
-                  <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <button
-                          type="button"
-                          class="close"
-                          data-dismiss="modal"
-                          aria-label="Close"
-                        >
-                          <span aria-hidden="true">&times;</span>
-                        </button>
-                      </div>
-                      <div class="modal-body">
-                        <img
-                          src="../img/Demons/Fantasia/Zodd.png"
-                          class="modal-image img-fluid"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- Modal -->
-              </figure>
-            </div>
-            <p>
-              <strong> Description :</strong>Zodd est un apôtre puissant et l'un
-              des premiers que Guts rencontre. Il est immensément fort et
-              immortel, prenant la forme d'un gigantesque démon cornu.
-            </p>
-            <br />
-            <p>
-              <strong> Affinités et Pouvoirs :</strong>Zodd possède une force
-              surhumaine, une grande endurance et la capacité de se transformer
-              en une créature démoniaque avec des ailes et des cornes.
-            </p>
-            <br />
+              <div class="combat">
+                <h2 class="mangatitle symbol" style="text-align: center">Le Vaisseau fantôme — Bonebeard et l'équipage réanimé</h2>
+                <figure>
+                  <img src="/img/Demons/fantasia/Ghost_Ship.jpg" alt="Bonebeard & Ghost Ship" class="center hover" />
+                  <figcaption>Bonebeard et son équipage réanimé harcèlent la Seahorse et le groupe de Guts.</figcaption>
+                  <br>
+                  <img src="/img/Demons/fantasia/sirenes.jpg" alt="sirenes" class="center hover" />
+                  <figcaption>Les sirènes, alliées de Bonebeard, attaquent le groupe de Guts.</figcaption>
+                </figure>
+                <p><strong>Contexte :</strong> Lors de la traversée vers Skellig, le vaisseau de Bonebeard réapparaît et attaque la Seahorse, lançant des créatures marines et tentaculaires.</p>
+                <p><strong>Forces :</strong> Bonebeard et sa flotte de morts-vivants contre Guts, ses compagnons et l'équipage de la Seahorse.</p>
+                <p><strong>Déroulement :</strong> Des créatures tentaculaires surgissent ; Guts intervient pour sauver l'équipage, Schierke protège le navire par des barrières, et Isma se révèle liée aux merrows.</p>
+                <p><strong>Conséquences :</strong> L'attaque pousse le groupe à explorer l'île liée au Sea God et conduit à l'affrontement suivant.</p>
+              </div>
+
+              <div class="combat">
+                <h2 class="mangatitle symbol" style="text-align: center">Le Sea God — Guts, Isma et les Merrows</h2>
+                <figure>
+                  <img src="/img/Demons/fantasia/Sea_God.jpg" alt="Sea God" class="center hover" />
+                  <figcaption>Guts pénètre dans la gorge du Sea God pour atteindre son cœur.</figcaption>
+                </figure>
+                <p><strong>Contexte :</strong> Les habitants d'une île sont transformés en créatures tentaculaires par la présence du Sea God, manipulé en coulisse par Bonebeard.</p>
+                <p><strong>Forces :</strong> Guts (Berserker Armor), Schierke, Isidro, Isma (les Merrows) et l'équipage du Seahorse contre le Sea God et ses serviteurs.</p>
+                <p><strong>Déroulement :</strong> Guts entre dans la créature, affronte ses défenses internes et, guidé par Schierke et la chanson des merrows, atteint et perce le cœur du monstre.</p>
+                <p><strong>Conséquences :</strong> Le Sea God est tué ; Isma retrouve sa forme humaine ; le groupe gagne un nouvel allié et poursuit sa route vers Skellig/Elfhelm.</p>
+              </div>
+
+              <div class="combat">
+                <h2 class="mangatitle symbol" style="text-align: center">Destruction d'Elfhelm — Guts vs Griffith</h2>
+                <figure>
+                  <img src="/img/Demons/fantasia/Elfhelm.jpg" alt="Destruction of Elfhelm" class="center hover" />
+                  <figcaption>La chute d'Elfhelm et l'enlèvement de Casca par Griffith.</figcaption>
+                </figure>
+                <p><strong>Contexte :</strong> Après leur arrivée à Elfhelm, des événements cosmiques amènent la manifestation de Griffith dans la forme du Moonlight Boy, puis la violente réapparition qui conduit à la chute d'Elfhelm.</p>
+                <p><strong>Forces :</strong> Guts et ses compagnons, la sorcellerie d'Elfhelm et les créatures astrales contre l'incursion orchestrée par Griffith et ses serviteurs.</p>
+                <p><strong>Déroulement :</strong> Griffth réapparaît, abducte Casca et l'île subit des phénomènes destructeurs (blobs, remontée de Qliphoth) qui anéantissent l'équilibre d'Elfhelm.</p>
+                <p><strong>Conséquences :</strong> Casca est enlevée à nouveau ; Elfhelm est détruite et le groupe repart avec des pertes et des questions accrues sur Griffith.</p>
+              </div>
+
+              <div class="combat">
+                <h2 class="mangatitle symbol" style="text-align: center">Pandemonium / Rakshas — Rickert, Silat, Tapasa & Daiba</h2>
+                <figure>
+                  <img src="/img/Demons/fantasia/Pandemonium.jpg" alt="Rakshas" class="center hover" />
+                  <figcaption>Rakshas, un apôtre dangereux qui attaque dans Falconia et les environs.</figcaption>
+                </figure>
+                <p><strong>Contexte :</strong> Plusieurs petites escarmouches ont lieu autour de Falconia et dans la capitale kushane, où des apôtres comme Rakshas menacent survivants et caravanes.</p>
+                <p><strong>Forces :</strong> Rickert, Silat, la Tapasa et Daiba, parfois aidés par locaux et mercenaires, contre Rakshas et d'autres apôtres.</p>
+                <p><strong>Déroulement :</strong> Rakshas attaque à plusieurs reprises ; les groupes de Rickert et Silat s'organisent pour riposter et fuir, utilisant ruse, animaux ou magie pour survivre.</p>
+                <p><strong>Conséquences :</strong> Rakshas est repoussé temporairement, mais les affrontements soulignent la domination croissante de Falconia et la difficulté de contrer les apôtres isolément.</p>
+              </div>
+
+              <div class="combat">
+                <h2 class="mangatitle symbol" style="text-align: center">Arrivée à la capitale Kushan — Qliphoth et combats urbains</h2>
+                <figure>
+                  <img src="/img/Demons/fantasia/Kushan_empire.jpg" alt="Kushan Capital" class="center hover" />
+                </figure>
+                <p><strong>Contexte :</strong> Guts et ses compagnons sont retenus puis transferrés vers la capitale Kushan où les tensions montent entre l'Empire Kushan et la montée de Falconia.</p>
+                <p><strong>Forces :</strong> Guts et la troupe, alliés locaux, contre des incursions astrales (Qliphoth), trolls et apôtres dans les rues de la ville.</p>
+                <p><strong>Déroulement :</strong> Des affrontements éclatent dans les rues tandis que la Qliphoth monte en force, forçant des manœuvres d'évasion, sauvetages et duels isolés.</p>
+                <p><strong>Conséquences :</strong> Le groupe est dispersé, des alliances se forment et l'échelle du conflit devient clairement politique et cosmique.</p>
+              </div>
+            </section>
           </ul>
         </div>
       </div>
     </main>
+    <div id="footer-content"></div>
   </body>
 
   <!-- Custom JavaScript -->
@@ -157,4 +162,6 @@
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"
   ></script>
+  <script src="/js/favicon.js"></script>
+  <script src="/js/image-modal.js"></script>
 </html>

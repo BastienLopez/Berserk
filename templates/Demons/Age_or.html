@@ -14,8 +14,9 @@
       }
 
       document.addEventListener("DOMContentLoaded", function () {
-        loadFile("/templates/head/head-content.html", "head-content");
+        loadFile("/templates/head/head.html", "head-content");
         loadFile("/templates/header.html", "header-content");
+        loadFile("/templates/footer.html", "footer-content");
       });
     </script>
   </head>
@@ -78,7 +79,7 @@
           <ul>
             <!-- Bazuso -->
             <li class="mangatitle">
-              <h2 style="text-align: center">Bazuso</h2>
+              <h2 class="mangatitle symbol" style="text-align: center">Bazuso</h2>
             </li>
 
             <div>
@@ -163,7 +164,7 @@
 
             <!-- 1er combat contre Griffith -->
             <li class="mangatitle">
-              <h2 style="text-align: center">1er combat contre Griffith</h2>
+              <h2 class="mangatitle symbol" style="text-align: center">1er combat contre Griffith</h2>
             </li>
 
             <div>
@@ -251,7 +252,7 @@
 
             <!-- 1er combat contre Zodd -->
             <li class="mangatitle">
-              <h2 style="text-align: center">1er combat contre Zodd</h2>
+              <h2 class="mangatitle symbol" style="text-align: center">1er combat contre Zodd</h2>
             </li>
 
             <div>
@@ -341,7 +342,7 @@
 
             <!-- 2eme combat contre Griffith -->
             <li class="mangatitle">
-              <h2 style="text-align: center">Second combat contre Griffith</h2>
+              <h2 class="mangatitle symbol" style="text-align: center">Second combat contre Griffith</h2>
             </li>
 
             <div>
@@ -433,7 +434,7 @@
 
             <!-- Wyald  -->
             <li class="mangatitle">
-              <h2 style="text-align: center">Wyald</h2>
+              <h2 class="mangatitle symbol" style="text-align: center">Wyald</h2>
             </li>
 
             <div>
@@ -528,7 +529,7 @@
 
             <!-- GOD HAND  -->
             <li class="mangatitle">
-              <h2 style="text-align: center">God Hand</h2>
+              <h2 class="mangatitle symbol" style="text-align: center">God Hand</h2>
             </li>
 
             <div>
@@ -697,6 +698,7 @@
         </div>
       </div>
     </main>
+    <div id="footer-content"></div>
   </body>
 
   <!-- Custom JavaScript -->
@@ -715,4 +717,6 @@
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"
   ></script>
+  <script src="/js/favicon.js"></script>
+  <script src="/js/image-modal.js"></script>
 </html>

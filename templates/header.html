@@ -14,11 +14,15 @@
     />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
-      <div
-        class="collapse navbar-collapse justify-content-center"
-        id="navbarNav"
-      >
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+      <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Mobile centered logo (placed after toggler so CSS can hide it when expanded) -->
+      <a class="navbar-brand d-lg-none mobile-brand" href="/templates/main_page.html" aria-label="Accueil">
+        <img src="/img/Berserk_logo.png" alt="Berserk Logo" style="height:35px;width:auto" />
+      </a>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
             <a class="nav-link" href="/templates/troupe_faucon.html"
@@ -34,13 +38,10 @@
           <li class="nav-item">
             <a class="nav-link" href="/templates/papauté.html">Papauté</a>
           </li>
+          <!-- Logo centré -->
           <li class="nav-item">
-            <a class="nav-link" href="/templates/main_page.html">
-              <img
-                src="/img/Berserk_logo.png"
-                alt="Berserk Logo"
-                style="height: 35px; width: auto"
-              />
+            <a class="nav-link" href="/templates/main_page.html" aria-label="Accueil">
+              <img src="/img/Berserk_logo.png" alt="Berserk Logo" style="height:35px;width:auto;display:block;margin:0 auto" />
             </a>
           </li>
           <li class="nav-item">
@@ -102,7 +103,78 @@
 
     <!-- Bootstrap JS and dependencies -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+      // Toggle a class on nav when the collapse opens/closes so we can adapt layout in CSS
+      (function(){
+        var nav = document.querySelector('.navbar-custom');
+        var coll = document.getElementById('navbarNav');
+        if (nav && coll && window.jQuery) {
+          jQuery(coll).on('show.bs.collapse', function(){ nav.classList.add('is-open'); });
+          jQuery(coll).on('hide.bs.collapse', function(){ nav.classList.remove('is-open'); });
+        }
+      })();
+    </script>
   </body>
+  <!-- Global reusable image modal injected across pages -->
+  <div class="modal fade" id="global-image-modal" tabindex="-1" role="dialog" aria-labelledby="global-image-modal" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body" style="text-align:center">
+          <img id="global-image-modal-img" src="" alt="" class="modal-image img-fluid" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Normalize per-page image modals to a single shared modal
+    (function () {
+      function retargetImageModals() {
+        var imgs = document.querySelectorAll('img[data-toggle="modal"]');
+        imgs.forEach(function (img) {
+          // ensure all target the global modal
+          img.setAttribute('data-target', '#global-image-modal');
+          img.classList.add('js-global-modal');
+        });
+      }
+
+      function bindClicks() {
+        // Use event delegation in case content is injected later
+        document.addEventListener('click', function (e) {
+          var t = e.target;
+          if (t && t.matches && t.matches('img.js-global-modal')) {
+            var full = t.getAttribute('data-full') || t.getAttribute('data-fullsrc') || t.getAttribute('data-src') || t.src;
+            var alt = t.getAttribute('alt') || '';
+            var modalImg = document.getElementById('global-image-modal-img');
+            if (modalImg) {
+              modalImg.src = full;
+              modalImg.alt = alt;
+            }
+            // If Bootstrap's JS is present, trigger the modal explicitly to avoid race with data-api
+            if (window.jQuery && jQuery.fn && jQuery.fn.modal) {
+              jQuery('#global-image-modal').modal('show');
+              e.preventDefault();
+              e.stopPropagation();
+            }
+          }
+        }, true);
+      }
+
+      // Run once header is injected
+      try {
+        retargetImageModals();
+        bindClicks();
+        // also observe DOM changes (for pages that load content dynamically)
+        var obs = new MutationObserver(function () { retargetImageModals(); });
+        obs.observe(document.documentElement || document.body, { childList: true, subtree: true });
+      } catch (e) { /* no-op */ }
+    })();
+  </script>
 </html>

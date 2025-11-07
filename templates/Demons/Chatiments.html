@@ -14,8 +14,9 @@
       }
 
       document.addEventListener("DOMContentLoaded", function () {
-        loadFile("/templates/head/head-content.html", "head-content");
+        loadFile("/templates/head/head.html", "head-content");
         loadFile("/templates/header.html", "header-content");
+        loadFile("/templates/footer.html", "footer-content");
       });
     </script>
   </head>
@@ -84,7 +85,7 @@
         </p>
         <br />
 
-        <h2 id="Enfants" style="text-align: center">Les Enfants perdus</h2>
+  <h2 id="Enfants" class="mangatitle symbol" style="text-align: center">Les Enfants perdus</h2>
         <h3 style="text-align: center">Tomes 14 à 16</h3>
         <br />
 
@@ -92,7 +93,7 @@
           <ul>
             <!-- L'arbre possédé -->
             <li class="mangatitle">
-              <h2 style="text-align: center">L'arbre possédé</h2>
+              <h2 class="mangatitle symbol" style="text-align: center">L'arbre possédé</h2>
             </li>
 
             <div>
@@ -167,7 +168,7 @@
 
             <!-- Rosine  -->
             <li class="mangatitle">
-              <h2 style="text-align: center">Rosine</h2>
+              <h2 class="mangatitle symbol" style="text-align: center">Rosine</h2>
             </li>
 
             <div>
@@ -226,12 +227,12 @@
             </p>
             <br />
 
-            <h2 id="Enchaines" style="text-align: center">Les enchaînés</h2>
+            <h2 id="Enchaines" class="mangatitle symbol" style="text-align: center">Les enchaînés</h2>
             <h3 style="text-align: center">Tomes 16 à 17</h3>
 
             <!-- Guts contre la troupe des chaîne d'acier  -->
             <li class="mangatitle">
-              <h2 style="text-align: center">
+              <h2 class="mangatitle symbol" style="text-align: center">
                 Guts contre la troupe des chaîne d'acier
               </h2>
             </li>
@@ -339,7 +340,7 @@
 
             <!-- La Nuit avec Farnese contre les Monstres  -->
             <li class="mangatitle">
-              <h2 style="text-align: center">
+              <h2 class="mangatitle symbol" style="text-align: center">
                 La Nuit avec Farnese contre les Monstres
               </h2>
             </li>
@@ -485,12 +486,12 @@
               </a>
             </p>
 
-            <h2 id="Naissance" style="text-align: center">La Naissance</h2>
+            <h2 id="Naissance" class="mangatitle symbol" style="text-align: center">La Naissance</h2>
             <h3 style="text-align: center">Tomes 17 à 21</h3>
 
             <!-- Guts contre Grand Bouc  -->
             <li class="mangatitle">
-              <h2 style="text-align: center">Guts contre Grand Bouc</h2>
+              <h2 class="mangatitle symbol" style="text-align: center">Guts contre Grand Bouc</h2>
             </li>
 
             <div>
@@ -591,7 +592,7 @@
 
             <!-- Guts contre les disciples de Mozgus  -->
             <li class="mangatitle">
-              <h2 style="text-align: center">
+              <h2 class="mangatitle symbol" style="text-align: center">
                 Guts contre les disciples de Mozgus
               </h2>
             </li>
@@ -701,7 +702,7 @@
 
             <!-- Guts contre Mozgus  -->
             <li class="mangatitle">
-              <h2 style="text-align: center">Guts contre Mozgus</h2>
+              <h2 class="mangatitle symbol" style="text-align: center">Guts contre Mozgus</h2>
             </li>
 
             <div>
@@ -807,6 +808,7 @@
         </div>
       </div>
     </main>
+    <div id="footer-content"></div>
   </body>
 
   <!-- Custom JavaScript -->
@@ -825,4 +827,6 @@
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"
   ></script>
+  <script src="/js/favicon.js"></script>
+  <script src="/js/image-modal.js"></script>
 </html>

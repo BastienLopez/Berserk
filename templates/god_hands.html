@@ -12,8 +12,9 @@
       }
 
       document.addEventListener("DOMContentLoaded", function () {
-        loadFile("head/head.html", "head-content");
-        loadFile("header.html", "header-content");
+        loadFile("/templates/head/head.html", "head-content");
+        loadFile("/templates/header.html", "header-content");
+        loadFile("/templates/footer.html", "footer-content");
       });
     </script>
   </head>
@@ -75,7 +76,7 @@
           <ul>
             <!-- Void -->
             <li class="mangatitle">
-              <h2 style="text-align: center">Void</h2>
+              <h2 class="mangatitle symbol" style="text-align: center">Void</h2>
             </li>
 
             <div>
@@ -145,7 +146,7 @@
 
             <!-- Femto (Griffith) -->
             <li class="mangatitle">
-              <h2 style="text-align: center">Femto (Griffith)</h2>
+              <h2 class="mangatitle symbol" style="text-align: center">Femto (Griffith)</h2>
             </li>
             <div>
               <figure>
@@ -212,7 +213,7 @@
 
             <!-- Slan  -->
             <li class="mangatitle">
-              <h2 style="text-align: center">Slan</h2>
+              <h2 class="mangatitle symbol" style="text-align: center">Slan</h2>
             </li>
             <div>
               <figure>
@@ -279,7 +280,7 @@
 
             <!-- Ubik  -->
             <li class="mangatitle">
-              <h2 style="text-align: center">Ubik</h2>
+              <h2 class="mangatitle symbol" style="text-align: center">Ubik</h2>
             </li>
             <div>
               <figure>
@@ -346,7 +347,7 @@
 
             <!-- Conrad  -->
             <li class="mangatitle">
-              <h2 style="text-align: center">Conrad</h2>
+              <h2 class="mangatitle symbol" style="text-align: center">Conrad</h2>
             </li>
             <div>
               <figure>
@@ -414,6 +415,7 @@
         </div>
       </div>
     </main>
+    <div id="footer-content"></div>
 
     <!-- Custom JavaScript -->
     <script
@@ -431,5 +433,7 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
+    <script src="/js/favicon.js"></script>
+    <script src="/js/image-modal.js"></script>
   </body>
 </html>
