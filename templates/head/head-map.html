@@ -7,7 +7,8 @@
 
 <!-- Custom CSS -->
 <!-- map-specific stylesheet (absolute path) -->
-<link rel="stylesheet" type="text/css" href="/Berserk/style/map.css" />
+<link rel="preload" href="/Berserk/style/map.css" as="style" onload="this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="/Berserk/style/map.css"></noscript>
 <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
 <title>Berserk ⚔</title>
 <!-- Custom CSS end -->

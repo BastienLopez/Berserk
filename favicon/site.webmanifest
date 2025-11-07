@@ -1,0 +1,13 @@
+{
+  "name": "Berserk",
+  "short_name": "Berserk",
+  "icons": [
+    {
+      "src": "/Berserk/favicon/favicon.ico",
+      "sizes": "64x64 32x32 16x16",
+      "type": "image/x-icon"
+    }
+  ],
+  "start_url": "/Berserk/",
+  "display": "standalone"
+}
